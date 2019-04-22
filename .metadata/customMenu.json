@@ -1,0 +1,507 @@
+{
+    "webContentPath": "/Users/lijiancheng/Agree/WebIDE/PIPE/PIPE/WebContent",
+    "layout": {},
+    "widgetCollection": {
+        "types": [
+            "默认"
+        ],
+        "map": {}
+    },
+    "referenceLine": true,
+    "viewer": {
+        "panels": {
+            "auiMenuFrame": {
+                "desp": "菜单",
+                "role": "menu",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-caidan",
+                "inGroup": "9A853964593CF76E121D-F43A"
+            },
+            "auiConfigureDefFrame": {
+                "desp": "配置定义",
+                "role": "configDef",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-peizhidingyi",
+                "inGroup": "12445D90A3D0D5F355BE-1E97"
+            },
+            "auiPreviewFrame": {
+                "desp": "预览",
+                "role": "preview",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "预览页面脚本代码",
+                        "role": "auiPreviewCompile",
+                        "icon": "aui aui-daima"
+                    },
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-dingbuyulan",
+                "inGroup": "E85D2F36927FE0D4F9EF-B037"
+            },
+            "auiContentFrame": {
+                "desp": "内容",
+                "role": "page",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-neirongshu",
+                "inGroup": "12445D90A3D0D5F355BE-1E97"
+            },
+            "auiCodeFrame": {
+                "desp": "代码",
+                "role": "code",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-daima",
+                "inGroup": "12445D90A3D0D5F355BE-1E97"
+            },
+            "auiCssFrame": {
+                "desp": "样式",
+                "role": "cssCode",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-yangshi",
+                "inGroup": "12445D90A3D0D5F355BE-1E97"
+            },
+            "auiConfigureFrame": {
+                "desp": "配置",
+                "role": "config",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-shilipeizhi",
+                "inGroup": "59CCDB162B18E0721F14-7605"
+            },
+            "auiDevelopmentFrame": {
+                "desp": "开发者中心",
+                "role": "develop",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-kaifazhezhongxin1",
+                "inGroup": "E85D2F36927FE0D4F9EF-B037"
+            },
+            "auiOverviewFrame": {
+                "desp": "逻辑概览",
+                "role": "overview",
+                "display": "none",
+                "iconList": [
+                    {
+                        "desp": "逻辑概览页面脚本代码",
+                        "role": "auiRunOverview",
+                        "icon": "aui-daima"
+                    },
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-luojifenxi",
+                "inGroup": "12445D90A3D0D5F355BE-1E97"
+            },
+            "auiCustomCodeFrame": {
+                "desp": "自定义代码",
+                "role": "customCodeFrame",
+                "display": "none",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-zidingyidaima",
+                "inGroup": "12445D90A3D0D5F355BE-1E97"
+            }
+        },
+        "classes": {
+            "auiMenuFrame": "aui-aside-left",
+            "auiContentFrame": "aui-page-ctt"
+        },
+        "groups": [
+            {
+                "css": {
+                    "top": "0%",
+                    "left": "0%",
+                    "display": "block",
+                    "width": "18.921%",
+                    "height": "100%",
+                    "zIndex": 0
+                },
+                "active": "auiMenuFrame",
+                "index": 0,
+                "id": "9A853964593CF76E121D-F43A",
+                "content": [
+                    "auiMenuFrame"
+                ]
+            },
+            {
+                "css": {
+                    "top": "0%",
+                    "left": "71.998%",
+                    "display": "block",
+                    "width": "28%",
+                    "height": "100%",
+                    "zIndex": 1
+                },
+                "active": "auiConfigureFrame",
+                "index": 1,
+                "id": "59CCDB162B18E0721F14-7605",
+                "content": [
+                    "auiConfigureFrame"
+                ]
+            },
+            {
+                "css": {
+                    "top": 0,
+                    "left": "18.921%",
+                    "height": "54.032%",
+                    "width": "52.696%",
+                    "zIndex": 2
+                },
+                "active": "auiConfigureDefFrame",
+                "index": 2,
+                "id": "12445D90A3D0D5F355BE-1E97",
+                "content": [
+                    "auiContentFrame",
+                    "auiConfigureDefFrame",
+                    "auiCodeFrame",
+                    "auiCssFrame",
+                    "auiOverviewFrame",
+                    "auiCustomCodeFrame"
+                ]
+            },
+            {
+                "css": {
+                    "top": "20.962%",
+                    "left": "18.9%",
+                    "height": "78.736%",
+                    "width": "52.521%",
+                    "zIndex": 3
+                },
+                "active": "auiDevelopmentFrame",
+                "index": 3,
+                "id": "E85D2F36927FE0D4F9EF-B037",
+                "content": [
+                    "auiPreviewFrame",
+                    "auiDevelopmentFrame"
+                ]
+            }
+        ],
+        "version": 520008
+    },
+    "editor": {
+        "panels": {
+            "auiMenuFrame": {
+                "desp": "菜单",
+                "role": "menu",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-caidan",
+                "inGroup": "816EE3C93495BAB18276-0F14"
+            },
+            "auiPreviewFrame": {
+                "desp": "预览",
+                "role": "preview",
+                "display": "none",
+                "iconList": [
+                    {
+                        "desp": "预览页面脚本代码",
+                        "role": "auiPreviewCompile",
+                        "icon": "aui aui-daima"
+                    },
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-dingbuyulan",
+                "inGroup": "E85D2F36927FE0D4F9EF-B037"
+            },
+            "auiContentFrame": {
+                "desp": "内容",
+                "role": "content",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-neirongshu",
+                "inGroup": "964A05AEB84448EA1CAE-3B93"
+            },
+            "auiConfigureFrame": {
+                "desp": "配置",
+                "role": "config",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-shilipeizhi",
+                "inGroup": "5F78F85BD16E2C036E03-D59F"
+            },
+            "auiDevelopmentFrame": {
+                "desp": "开发者中心",
+                "role": "develop",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-kaifazhezhongxin1",
+                "inGroup": "E85D2F36927FE0D4F9EF-B037"
+            },
+            "auiOverviewFrame": {
+                "desp": "逻辑概览",
+                "role": "overview",
+                "display": "block",
+                "iconList": [
+                    {
+                        "desp": "逻辑概览页面脚本代码",
+                        "role": "auiRunOverview",
+                        "icon": "aui-daima"
+                    },
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-luojifenxi",
+                "inGroup": "964A05AEB84448EA1CAE-3B93"
+            },
+            "auiCustomCodeFrame": {
+                "desp": "自定义代码",
+                "role": "customCodeFrame",
+                "display": "none",
+                "iconList": [
+                    {
+                        "desp": "切换全屏",
+                        "role": "maximization",
+                        "icon": "aui-quanping"
+                    },
+                    {
+                        "desp": "关闭",
+                        "role": "frameClose",
+                        "icon": "aui-guanbi"
+                    }
+                ],
+                "icon": "aui-zidingyidaima",
+                "inGroup": "964A05AEB84448EA1CAE-3B93"
+            }
+        },
+        "classes": {
+            "auiMenuFrame": "aui-aside-left",
+            "auiContentFrame": "aui-page-ctt"
+        },
+        "groups": [
+            {
+                "css": {
+                    "top": 0,
+                    "left": "0%",
+                    "width": "18.921%",
+                    "height": "99.76%",
+                    "zIndex": 0
+                },
+                "active": "auiMenuFrame",
+                "index": 0,
+                "id": "816EE3C93495BAB18276-0F14",
+                "content": [
+                    "auiMenuFrame"
+                ]
+            },
+            {
+                "css": {
+                    "top": 0,
+                    "left": "76.11%",
+                    "width": "23.693%",
+                    "height": "99.522%",
+                    "zIndex": 1
+                },
+                "active": "auiConfigureFrame",
+                "index": 1,
+                "id": "5F78F85BD16E2C036E03-D59F",
+                "content": [
+                    "auiConfigureFrame"
+                ]
+            },
+            {
+                "css": {
+                    "top": 0,
+                    "left": "18.921%",
+                    "height": "54.185%",
+                    "width": "56.291%",
+                    "zIndex": 2
+                },
+                "active": "auiOverviewFrame",
+                "index": 2,
+                "id": "964A05AEB84448EA1CAE-3B93",
+                "content": [
+                    "auiContentFrame",
+                    "auiOverviewFrame",
+                    "auiCustomCodeFrame"
+                ]
+            },
+            {
+                "css": {
+                    "top": "54.337%",
+                    "left": "18.732%",
+                    "height": "45.662%",
+                    "width": "56.667%",
+                    "zIndex": 3
+                },
+                "active": "auiDevelopmentFrame",
+                "index": 3,
+                "id": "E85D2F36927FE0D4F9EF-B037",
+                "content": [
+                    "auiPreviewFrame",
+                    "auiDevelopmentFrame"
+                ]
+            }
+        ],
+        "version": 520007
+    }
+}

@@ -1,0 +1,71 @@
+@middleDis: calc(~"50% - 5px");
+@popoverCtnBgWhite: #ffffff;
+@popoverCtnShadow: #cccccc;
+
+/*Popover Start*/
+.easy-popover {
+
+  position: absolute;
+  background-color: @popoverCtnBgWhite;
+  box-shadow: 0 0 0.8em #ccc;
+  border-radius: 2px;
+  display:none;
+  z-index: 10;
+  width:490px;
+  top:130px;
+  left:-164px;
+
+  .easy-popover-tip {
+
+    content: " ";
+    display: block;
+    position: absolute;
+    background-color: @popoverCtnBgWhite;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 220px;
+    box-shadow: -2px -2px 3px #eee;
+  }
+
+  .easy-popover-hover{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+  }
+
+  .easy-popover-tip-top {
+
+    left: @middleDis;
+    bottom: -5px;
+    box-shadow: 1px 1px 2px @popoverCtnShadow;
+  }
+  .easy-popover-tip-right {
+
+    left: -5px;
+    top: @middleDis;
+    box-shadow: -1px 1px 2px @popoverCtnShadow;
+  }
+  .easy-popover-tip-bottom {
+
+    left: @middleDis;
+    top: -5px;
+    box-shadow: -1px -1px 2px @popoverCtnShadow;
+  }
+  .easy-popover-tip-left {
+
+    right: -5px;
+    top: @middleDis;
+    box-shadow: 1px -1px 2px @popoverCtnShadow;
+  }
+
+}
+
+.easy-popover .easy-popover-item {
+  letter-spacing: .8em;
+  cursor: pointer;
+}
+
+/*Popover End*/

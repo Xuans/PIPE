@@ -1,0 +1,216 @@
+[data-widget-type="aweb4CheckIpt"] {
+  color: #888888;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box {
+  display: flex;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item {
+  position: relative;
+  border: solid 1px #f7f7fa;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item .item__box.reverse {
+  flex-direction: row-reverse;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item .item__box.reverse .icon {
+  padding-left: 5px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item::before {
+  display: none;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item.active {
+  border-color: #13b1f5;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item.active .check-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  font-size: 10px;
+  color: #fff;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item.sActive {
+  box-shadow: 0 0 5px 0px #098dff;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .item.active::after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: #13b1f5;
+  border-top-color: #13b1f5;
+  transform: rotate(90deg);
+  border-radius: 4px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper {
+  flex: 1;
+  padding: 0 10px 10px 0;
+  box-sizing: border-box;
+  border-right: 1px solid #e5e5e5;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .search__box {
+  float: left;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .search__box input {
+  width: 246px;
+  height: 25px;
+  border-radius: 4px;
+  border: solid 1px #e5e5e5;
+  box-sizing: border-box;
+  padding: 0 20px 0 10px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .search__box i {
+  margin-left: -20px;
+  cursor: pointer;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .bottom {
+  padding-top: 10px;
+  padding-left: 10px;
+  line-height: 25px;
+  overflow: hidden;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .cheader {
+  line-height: 25px;
+  width: calc(100% - 10px);
+  overflow: hidden;
+  padding-left: 10px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .cheader .total__box {
+  float: right;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .cbody {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 500px;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .item {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex: calc(20% - 19px) 0 0;
+  max-width: 150px;
+  min-width: 120px;
+  margin-left: 19px;
+  margin-top: 19px;
+  height: 60px;
+  background-color: #f7f7fa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .item .item__box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .item .item__box p {
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .item .item__box .icon {
+  flex: 20px 0 0;
+  font-size: 19px;
+  padding-right: 5px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__check--wrapper .item .item__box .text {
+  flex: 1;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper {
+  flex: 380px 0 0;
+  margin-left: 19px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .sheader {
+  height: 25px;
+  line-height: 25px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .sbody {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 500px;
+  overflow: auto;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .stotal__box {
+  color: #13b1f5;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .item {
+  align-items: center;
+  display: flex;
+  flex: calc(50% - 20px) 0 0;
+  max-width: 170px;
+  height: 60px;
+  background-color: #f7f7fa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 19px;
+  margin-right: 19px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .item .item__box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .item .item__box p {
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .item .item__box .icon {
+  flex: 20px 0 0;
+  font-size: 19px;
+  padding-right: 5px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box .checkIpt__checked--wrapper .item .item__box .text {
+  flex: 1;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--left {
+  flex-direction: row-reverse;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--left .checkIpt__check--wrapper {
+  border: none;
+  border-left: 1px solid #e5e5e5;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--right {
+  flex-direction: row;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--top {
+  flex-direction: column-reverse;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--top .checkIpt__check--wrapper {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--top .checkIpt__checked--wrapper {
+  flex: auto;
+  margin-bottom: 19px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--bottom {
+  flex-direction: column;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--bottom .checkIpt__check--wrapper {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 19px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box--bottom .checkIpt__checked--wrapper {
+  flex: auto;
+  margin-top: 19px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box.checkIpt__mode--2 .item {
+  max-width: none;
+  min-width: auto;
+  flex: 0.1 0 auto;
+  height: auto;
+  padding: 10px 5px;
+}
+[data-widget-type="aweb4CheckIpt"] .checkIpt__box.checkIpt__mode--2 .item .item__box {
+  padding-left: 0;
+}

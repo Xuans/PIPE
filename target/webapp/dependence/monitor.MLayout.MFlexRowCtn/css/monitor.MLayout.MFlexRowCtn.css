@@ -1,0 +1,106 @@
+.flex-layout.flex-layout-normal {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-layout.flex-layout-normal > div {
+  flex: 1;
+}
+.flex-layout.flex-layout-percent {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-layout.flex-layout-percent > div {
+  flex: 1;
+}
+.flex-layout.flex-layout-percent > div.cell-1 {
+  flex: 0 0 100%;
+}
+.flex-layout.flex-layout-percent > div.cell-2 {
+  flex: 0 0 50%;
+}
+.flex-layout.flex-layout-percent > div.cell-3 {
+  flex: 0 0 33.33333333%;
+}
+.flex-layout.flex-layout-percent > div.cell-4 {
+  flex: 0 0 25%;
+}
+.flex-layout.flex-layout-percent > div.cell-5 {
+  flex: 0 0 20%;
+}
+.flex-layout.flex-layout-percent > div.cell-6 {
+  flex: 0 0 16.66666667%;
+}
+.flex-layout.flex-layout-percent > div.cell-7 {
+  flex: 0 0 14.28571429%;
+}
+.flex-layout.flex-layout-percent > div.cell-8 {
+  flex: 0 0 12.5%;
+}
+.flex-layout.flex-layout-percent > div.cell-9 {
+  flex: 0 0 11.11111111%;
+}
+.flex-layout.flex-layout-percent > div.cell-10 {
+  flex: 0 0 10%;
+}
+.flex-layout.flex-layout-flow {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+.flex-layout.flex-layout-flow > div {
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid red;
+}
+.flex-layout.flex-layout-holy-grail {
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.flex-layout.flex-layout-holy-grail > div:first-child,
+.flex-layout.flex-layout-holy-grail > div:last-child {
+  flex: 1;
+}
+.flex-layout.flex-layout-holy-grail > div:nth-child(2) {
+  display: flex;
+  flex: 1;
+}
+.flex-layout.flex-layout-holy-grail > div:nth-child(2) :first-child {
+  flex: 1;
+}
+.flex-layout.flex-layout-holy-grail > div:nth-child(2) :nth-child(2),
+.flex-layout.flex-layout-holy-grail > div:nth-child(2) :nth-child(3) {
+  flex: 0 0 12em;
+}
+.flex-layout.flex-layout-holy-grail > div:nth-child(2) :nth-child(2) {
+  /* 导航放到最左边 */
+  order: -1;
+}
+.flex-layout.flex-layout-media {
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+}
+.flex-layout.flex-layout-media :last-child {
+  flex: 1;
+}
+.flex-layout.flex-layout-fixed-foot {
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.flex-layout.flex-layout-fixed-foot :nth-child(2) {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .flex-layout.flex-layout-holy-grail :nth-child(2) {
+    flex-direction: column;
+    flex: 1;
+  }
+  .flex-layout.flex-layout-holy-grail :nth-child(2) > div {
+    flex: auto;
+  }
+}

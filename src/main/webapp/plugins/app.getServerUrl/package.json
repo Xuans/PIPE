@@ -1,0 +1,53 @@
+{
+  "_from": "@aweb-plugins/app.getServerUrl@^6.0.0",
+  "_id": "@aweb-plugins/app.getServerUrl@6.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-Y4eq5BRDfR2YTvrfOqZ4CiHy3iM=",
+  "_location": "/@aweb-plugins/app.getServerUrl",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@aweb-plugins/app.getServerUrl@^6.0.0",
+    "name": "@aweb-plugins/app.getServerUrl",
+    "escapedName": "@aweb-plugins%2fapp.getServerUrl",
+    "scope": "@aweb-plugins",
+    "rawSpec": "^6.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^6.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://npm.awebide.com/@aweb-plugins/app.getServerUrl/download/@aweb-plugins/app.getServerUrl-6.0.0.tgz",
+  "_shasum": "6387aae414437d1d984efadf3aa6780a21f2de23",
+  "_spec": "@aweb-plugins/app.getServerUrl@^6.0.0",
+  "_where": "/Users/lijiancheng/Agree/WebIDE/PIPE/PIPE",
+  "author": "",
+  "bundleDependencies": false,
+  "category": "数据操作",
+  "deprecated": false,
+  "description": "获取服务器域名",
+  "docs": {
+    "name": "getServerUrl",
+    "desp": "获取服务器域名",
+    "details": "获取服务器域名，如https:awebide.com:8443/kk",
+    "hasReturn": true,
+    "returnValue": {
+      "name": "serverUrl",
+      "desp": "服务器域名",
+      "type": "string"
+    },
+    "edition": {
+      "mobile": "app.getServerUrl"
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@aweb-plugins/app.getServerUrl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.0.0"
+}

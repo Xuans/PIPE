@@ -1,0 +1,429 @@
+@stopColor: #ffba00;
+@runColor: #23ad44;
+@suspendColor: #3db9ff;
+@errorColor: #f05050;
+@waitDelColor: #7266ba;
+@reviewColor: #7ac713;
+@delColor: #a6a6a6;
+@unlinkColor: #a6a6a6;
+@agreeColor: #04bebd;
+.product-panel {
+    margin-left:-15px;
+    box-sizing: border-box;
+    .pp-add{
+    	cursor:pointer;
+    }
+    .pp-ctn {
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        width: 252px;
+        height: 220px;
+        margin: 20px 0 0 20px;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        background-color: #fff;
+        &:hover {
+            border: 1px solid #ddd;
+            box-shadow: 0 0 8px #aaa;
+        }
+        .pp-header {
+            height: 30px;
+            overflow: hidden;
+            h4 {
+                float: left;
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 20px;
+
+            }
+
+        }
+
+        .pp-opr {
+            position: absolute;
+            padding-top: .5em;
+            top: 0.5em;
+            right: -0.5em;
+            width: 3em;
+            height: 1em;
+            cursor: pointer;
+
+            span{
+
+                font-size:12px;
+                color:#B3B3B3;
+            }
+
+            .fa-th-list:hover~.pp-opr-menu{
+
+                display:block;
+            }
+            .pp-opr-menu{
+
+                display:none;
+                position: absolute;
+                padding: .5em 0;
+                top: 18px;
+                right: -1.3em;
+                min-width: 6.5em;
+                background-color: #fff;
+                box-shadow: 0 0 5px 0 #ddd;
+                border: 1px solid #ddd;
+                text-align: left;
+                border-radius: 3px;
+                text-indent: 1em;
+                cursor: pointer;
+                z-index:10;
+
+                &:hover{
+
+                    display:block;
+                }
+
+                li{
+                    padding: .1em;
+
+                    .fa{
+                        margin: 0 5px 0 -12px;
+                    }
+
+                    &.pp-btn-disabled{
+
+                        color:#ccc;
+                    }
+
+                    &:not(.pp-btn-disabled):hover{
+
+                        background-color:@agreeColor;
+                        color:#fff;
+                    }
+
+                    &.pp-btn-disabled:hover{
+                        cursor: no-drop;
+                    }
+                }
+
+                hr{
+
+                    margin:5px 0;
+                }
+            }
+        }
+        .pp-ctt {
+            cursor: pointer;
+            .pp-status-ctn {
+
+                .pp-status-ctt {
+                    position: relative;
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px auto;
+                    padding: .5em;
+                    border-radius: 50%;
+                    background: #eee;
+                    box-sizing: border-box;
+                    .pp-status-ball {
+                        position: absolute;
+                        top: -5px;
+        				right: 0px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: .4em;
+                        z-index: 1;
+                        &:after {
+                            position: absolute;
+                            top: -4px;
+                            right: -4px;
+                            bottom: -4px;
+                            left: -4px;
+                            content: '';
+                            opacity: .3;
+                            border-radius: 50%;
+                        }
+                    }
+                    &:before {
+                        font-size: 17px;
+                        position: absolute;
+                        top: 32%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &:after {
+                        position: absolute;
+                        top: -10px;
+                        right: -10px;
+                        bottom: -10px;
+                        left: -10px;
+                        content: '';
+                        border: 2px solid #eee;
+                        border-radius: 50%;
+                    }
+                }             
+                /*运行状态***************************************************start*/
+                
+                .pp-status(~'.pp-status-ctt.pp-status-unlink', @unlinkColor, @unlinkColor, ~'"未连接"');
+                .pp-status(~'.pp-status-ctt.pp-status-stop', @stopColor, @stopColor, ~'"停止"');
+                .pp-status(~'.pp-status-ctt.pp-status-run', @runColor, @runColor, ~'"运行"');
+                .pp-status(~'.pp-status-ctt.pp-status-wait-del', @waitDelColor, @waitDelColor, ~'"待删"');
+                .pp-status(~'.pp-status-ctt.pp-status-del', @delColor, @delColor, ~'"已删"');
+                .pp-status(~'.pp-status-ctt.pp-status-suspend', @suspendColor, @suspendColor, ~'"暂停"');
+                .pp-status(~'.pp-status-ctt.pp-status-error', @errorColor, @errorColor, ~'"异常"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-creating', @unlinkColor, @unlinkColor, ~'"创建中"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-init', @agreeColor, @agreeColor, ~'"初始化中"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-starting', @runColor, @runColor, ~'"启动中"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-deleting', @delColor, @delColor, ~'"删除中"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-stopping', @stopColor, @stopColor, ~'"停止中"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-restarting', @reviewColor, @reviewColor, ~'"重启中"');
+                .pp-status-ing(~'.pp-status-ctt.pp-status-synchronizing', @suspendColor, @suspendColor, ~'"同步中"');
+
+                /*运行状态*****************************************************end*/
+            }
+        }
+        .pp-status-btn{
+            position:absolute;
+            top: 85px;
+            right: 20px;
+            button{
+                width:50px;
+                height:26px;
+                font-size:12px;
+            }
+        }
+        .pp-list {
+            margin-top: 20px;
+            .pp-list-row {
+                width: 100%;
+                color: #888;
+                font-size: 12px;
+                line-height: 25px;
+                border-bottom: 1px solid #eee;
+                .pp-row-title,
+                .pp-row-text {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .pp-row-text{
+                    margin-left: 40px;
+                }
+                .pp-row-title {
+                    float: left;
+                    width: 42px;
+                    text-align: right;
+                    padding-right: 5px;
+                    box-sizing: border-box;
+                }
+                .pp-row-text {
+
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+        &:last-child {
+            display: table;
+            .pp-plus-ctt {
+                display: table-cell;
+                color: #ccc;
+                text-align: center;
+                vertical-align: middle;
+                .fa,.icon {
+                    font-size: 52px;
+                    position: relative;
+                }
+            }
+        }
+        .pp-footer {
+            text-align: right;
+            button {
+                font-size: 12px;
+                display: inline-block;
+                width: 36px;
+                height: 24px;
+                margin-left: 10px;
+                padding: 4px;
+                border: solid 1px #4a5659;
+                border-radius: 4px;
+                background-color: #fff;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            #deleteNode {
+                color: #f05050;
+                border-color: #f05050;
+            }
+        }
+    }
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+/*.pp-status-ctt:hover{
+    background: transparent;
+    border: 2px dotted #ccc;
+    transition:all linear .3s;
+    .pp-status-ball {
+        top: 10px !important;
+        right: 27px !important;
+        font-family: iconfont;
+        background-color: transparent !important;
+        animation:none;
+        -webkit-animation:none;
+        &:before{
+            position: absolute;
+            content: "\e669";
+            font-family: "iconfont";
+            color: #fff;
+            font-size: 16px;
+            transition:all linear .3s;
+        }
+        &:after {
+            background-color: transparent !important;
+        }
+    }
+    &:before {
+        width: 100%;
+        content: "查看进程" !important;
+        text-align: center;
+        color: #fff !important;
+        font-size: 12px !important;
+        line-height: 4;
+        z-index: 1;
+    }
+    &:after{
+        background-color: rgba(0,0,0,.5);
+        border-color:  rgba(0,0,0,.5);
+        transition:all linear .3s;
+    }
+}*/
+
+/*正在进行中的状态函数*/
+    .pp-status-ing(@selector, @color, @text-color, @content-value){
+        .pp-status(@selector, @color, @text-color, @content-value);
+        @ball-size:8px;
+        @top-size:6px;
+        @left-size:2px;
+        @{selector}{
+            position: relative;
+            border-color: transparent;
+            background: transparent !important;
+            &:before{
+                font-size: 15px;
+                top:35%;
+            }
+            .pp-status-ball{
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                top: -2px;
+                left: -2px;
+                border: 2px dotted @color;
+                background-color: transparent;
+                animation:node-rotate infinite 3s;
+                transition:none;
+            }
+            .pp-status-ball:after,
+            .pp-status-ball:before{   
+                position: absolute;
+                content: '';
+                top: @top-size;
+                right: 0px;
+                bottom: 0px;
+                left: @left-size;
+                width: @ball-size;
+                height: @ball-size;
+                opacity: 1;
+                border-radius: @ball-size 0 @ball-size @ball-size ;
+                background: white !important;
+            }
+            .pp-status-ball:before{
+                top: @top-size + 1px;
+                right: 0px;
+                bottom: 0px;
+                left: @left-size + 1px;
+                width: @ball-size - 2px;
+                height: @ball-size - 2px;
+                background: @color !important;
+                z-index: 1;
+            }
+        }
+    }
+/*运行状态函数*/
+.pp-status(@selector, @color, @text-color, @content-value){
+    @{selector} {
+        .pp-status-ball {
+            background-color: @color;
+            &:after {
+                background-color: @color;
+            }
+        }
+        &:before {
+            width: 100%;
+            content: @content-value;
+            color: @text-color;
+            text-align: center;
+        }
+    }
+}
+.pp-status-icon(@selector, @color, @content-value){
+    @{selector}{
+        .pp-status-ball {
+            top: 10px;
+            right: 27px;
+            font-family: iconfont;
+            &:before{
+                position: absolute;
+                content: "\e669";
+                font-family: "iconfont";
+                color: #fff;
+
+            }
+            &:after {
+                background-color: @color;
+            }
+        }
+        &:before {
+            width: 100%;
+            content: @content-value;
+            color: #fff;
+            text-align: center;
+        }
+        &:after{
+            background-color: rgba(0,0,0,.5);
+            border-color: none;
+        }
+    }
+}
+/*正在进行中状态的动画*/
+@keyframes node-rotate{
+    from{
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari and Chrome */
+    }
+    to{
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    }
+}
+@-webkit-keyframes  node-rotate{
+    from{
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari and Chrome */
+    }
+    to{
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    }
+}

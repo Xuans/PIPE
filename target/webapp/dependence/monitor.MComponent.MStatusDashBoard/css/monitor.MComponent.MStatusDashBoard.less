@@ -1,0 +1,117 @@
+.state-dashboard{
+    
+    .sd-frame{
+        box-sizing: border-box;
+        height: 241px;
+        width: 241px;
+        background: #fe7b23;
+        position: relative;
+        overflow: hidden;
+        .sd-ctn{
+            position: relative;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            height: 128px;
+            width: 173px;
+            background: #fe7b23;
+            .sd-background {
+                position: absolute;
+                width: 173px;
+                height: 173px;
+                background: #fe7b23;
+                border-radius: 50%;
+                left: 49.7%;
+                margin-left: -86.5px;
+                .sd-background-fix {
+                    position: absolute;
+                    width: 168px;
+                    height: 168px;
+                    background: #fe7b23;
+                    border-radius: 50%;
+                    top:50%;
+                    left: 50%;
+                    margin: -84px 0 0 -84px;
+                    z-index: 1000;
+                }
+            }
+            .sd-pointer1 {
+                position: absolute;
+                width: 173px;
+                height: 173px;
+                background: #fff;
+                border-radius: 50%;
+                top: 0px;
+                left: 0px;
+                clip: rect(0px, 86.5px, 86.5px, 0px);
+                transform: rotate(-137deg);
+                /*对应90+23*/
+            }
+            .sd-pointer2 {
+                position: absolute;
+                width: 173px;
+                height: 173px;
+                background: #fff;
+                border-radius: 50%;
+                top: 0px;
+                left: 0px;
+                clip: rect(0px, 173px, 86.5px, 86.5px);
+                transform: rotate(130deg);
+            }
+            .sd-pointer3 {
+                position: absolute;
+                width: 173px;
+                height: 173px;
+                background: #fff;
+                border-radius: 50%;
+                top: 0px;
+                left: 0px;
+                clip: rect(86.5px, 86.5px, 173px, 0px);
+                transform: rotate(-42deg);
+            }
+            .sd-pointer4 {
+                position: absolute;
+                width: 173px;
+                height: 173px;
+                background: #fff;
+                border-radius: 50%;
+                top: 0px;
+                left: 0px;
+                clip: rect(86.5px, 173px, 173px, 86.5px);
+                transform: rotate(44deg);
+            }
+            .sd-pointer1,.sd-pointer2,.sd-pointer3,.sd-pointer4{
+                top:0;
+                left: 50%;
+                margin-left: -86.5px;
+                width: 172px;
+                height: 172px;               
+            }
+            .sd-state{
+                position: absolute;
+                top: 36%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                z-index: 10000;
+                .sd-state-num{
+                    margin: 0;
+                    font-size: 35px;
+                    color:#fff;
+                }
+                .sd-state-detail{
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            >img{
+                position: absolute;
+                top:51.5%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 2000;
+            }
+        }
+    }
+}

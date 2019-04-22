@@ -1,0 +1,69 @@
+.ui-widget-content {
+  background: #fff;
+  color: #000;
+}
+.ui-widget-content .ui-widget-header {
+  background: #04bebd;
+  border: 1px solid #04bebd;
+}
+.ui-widget-content .ui-widget-header .ui-state-hover {
+  border: 1px solid #04bebd;
+  background: #04bebd;
+  color: #fff;
+}
+.ui-widget-content .ui-widget-header .ui-state-hover .ui-icon {
+  background-image: url("../images/ui-icons_ffffff_256x240.png");
+}
+.ui-widget-content .ui-datepicker-calendar .ui-state-default {
+  border: 1px solid #fff;
+  background: #fff;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0;
+}
+.ui-widget-content .ui-datepicker-calendar .ui-state-default.ui-state-hover {
+  /*background:#dcf1ef;
+		    	border:1px solid #dcf1ef;
+		    	color:#fff;*/
+  border: 1px solid #dcf1ef;
+  background: #dcf1ef;
+  color: #fff;
+}
+.ui-widget-content .ui-datepicker-calendar .ui-state-highlight {
+  border: 1px solid #04bebd;
+  background: #fff;
+  color: #04bebd;
+}
+.ui-widget-content .ui-datepicker-calendar .ui-state-highlight.ui-state-hover {
+  border: 1px solid #04bebd;
+  background: #fff;
+  color: #04bebd;
+}
+.ui-widget-content .ui-datepicker-calendar .ui-state-active {
+  border: 1px solid #04bebd;
+  background: #04bebd;
+  color: #fff;
+}
+.ui-widget-content .ui-datepicker-calendar .ui-state-active.ui-state-hover {
+  border: 1px solid #04bebd;
+  background: #04bebd;
+  color: #fff;
+}
+.ui-widget-content button.ui-state-hover {
+  border: 1px solid #b3f2f5;
+  background: #b3f2f5;
+  color: #fff;
+}
+.ui-widget-content .ui-state-focus {
+  outline: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #fff;
+}
+.ui-widget-content .ui-timepicker-div .ui-state-hover {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #fff;
+}

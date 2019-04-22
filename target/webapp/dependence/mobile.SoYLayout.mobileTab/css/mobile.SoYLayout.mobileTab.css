@@ -1,0 +1,191 @@
+/*
+    desp:变量表
+    author:lijiancheng@agree.com.cn
+    date:2017-01-19
+    version：AUI 4.2.0 dev
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.list-item {
+  padding: 0.8em 1em;
+  color: #fff;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-item:hover {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hidden {
+  visibility: hidden;
+}
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.no-border {
+  border: none !important;
+  outline: 0 !important;
+}
+.no-style {
+  margin-left: 0;
+  list-style: none;
+}
+.default-theme .tab-bottom {
+  position: relative;
+  padding-bottom: 50px;
+}
+.default-theme .mobile-tabs-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+.default-theme .mobile-tabs-container.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@keyframes circle-pic {
+  0% {
+    background-position: top left,bottom right,0 0,0 0;
+    background-position: top, bottom, 0, 0;
+  }
+  100% {
+    background-position: bottom, top, 0, 0;
+  }
+}
+@-webkit-keyframes circle-pic {
+  0% {
+    background-position: top, bottom, 0, 0;
+  }
+  100% {
+    background-position: bottom, top, 0, 0;
+  }
+}
+.default-theme .mobile-tabs {
+  display: flex;
+  position: relative;
+  left: 0;
+  z-index: 1;
+  color: #999;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+.default-theme .mobile-tabs > .no-scroll {
+  flex: 1;
+}
+.default-theme .mobile-tabs > .top-scroll {
+  flex-wrap: nowrap;
+}
+.default-theme .mobile-tabs > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: -0.3em;
+  height: 40px;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+.default-theme .mobile-tabs > li.bottom {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 50px;
+}
+.default-theme .mobile-tabs > li:hover {
+  color: #00a4af;
+}
+.default-theme .mobile-tabs > li .list-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.default-theme .mobile-tabs > li a {
+  padding: 4px;
+  white-space: nowrap;
+}
+.default-theme .mobile-tabs > li .icon {
+  padding: 4px;
+  color: #ccc;
+  font-size: 20px;
+}
+.default-theme .mobile-tabs > li .icon.bottom {
+  padding: 4px 4px 0 4px;
+}
+.default-theme .mobile-tabs > li.active {
+  background-color: #fff;
+}
+.default-theme .mobile-tabs > li.active .icon {
+  color: #00a4af;
+}
+.default-theme .mobile-tabs > li.active a {
+  color: #00a4af;
+  font-weight: 500;
+}
+.default-theme .mobile-main {
+  position: absolute;
+  max-width: 100%;
+  padding: 1em;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5ffffff, endColorstr=#E5ffffff);
+  border-top: transparent;
+  overflow: auto;
+  top: 56px;
+  /*box-shadow: 0 4px 12px -6px rgba(5,198,151,.5) inset;*/
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.default-theme .mobile-tab-content-menu {
+  position: fixed;
+  z-index: 3;
+  margin-left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.95);
+  -webkit-box-shadow: 3px 4px 10px #000;
+  -moz-box-shadow: 3px 4px 10px #000;
+  box-shadow: 3px 4px 10px #000;
+}
+.default-theme .mobile-tab-content-menu > li {
+  padding: 0.8em 1em;
+  color: #fff;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.default-theme .mobile-tab-content-menu > li:hover {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,163 @@
+.m-search{
+    position: relative;
+    padding: 8px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #EFEFF4;
+
+    .m-search-form {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex: auto;
+        flex: auto;
+        background-color: #EFEFF4;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            border-radius: 10px;
+            border: 1px solid #E6E6EA;
+            box-sizing: border-box;
+            background: #FFFFFF;
+        }
+
+        .m-search-panel {
+            position: relative;
+            padding-left: 30px;
+            padding-right: 30px;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+
+            .m-search-input {
+                padding: 4px 0;
+                width: 100%;
+                height: 1.42857143em;
+                border: 0;
+                font-size: 14px;
+                line-height: 1.42857143em;
+                box-sizing: content-box;
+                background: transparent;
+            }
+
+            > .m-search-icon {
+                position: absolute;
+                left: 10px;
+                top: 0;
+            }
+
+            .m-search-icon-clear {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0 10px;
+                line-height: 28px;
+                color: #B2B2B2;
+                font-size: 14px;
+                vertical-align: middle;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+
+                &::before {
+                    display: inline-block;
+                    margin-left: 0.2em;
+                    margin-right: 0.2em;
+                }
+            }
+        }
+
+        .m-search-label {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            left: 1px;
+            z-index: 2;
+            border-radius: 3px;
+            text-align: center;
+            color: #808080;
+            background: #FFFFFF;
+
+            transform-origin: 0px 0px 0px;
+            opacity: 1;
+            transform: scale(1, 1);
+
+            > .m-search-icon {
+                margin-right: 5px;
+            }
+            
+            > span {
+                display: inline-block;
+                font-size: 14px;
+                line-height: 1.6;
+                vertical-align: middle;
+            }
+
+        }
+        .disabled{
+            background-color: #EFEFF4;
+        }
+    }
+
+    .m-search-cancel {
+        display: none;
+        margin-left: 10px;
+        line-height: 28px;
+        white-space: nowrap;
+    }
+}
+
+
+.m-search-input:not(:valid) ~ .m-search-icon-clear{
+    display: none;
+}
+
+
+.m-search.m-search-focus .m-search-form .m-search-label{
+    display: none;
+}
+
+.m-search.m-search-focus .m-search-cancel{
+    display: block;
+}
+
+// .m-search .m-search-panel>i,
+// .m-search .m-search-panel-focus>i{
+//     font-size: 1.3rem;
+//     margin-left: .4rem;
+//     margin-top: .2rem;
+//     color: #888;
+// }
+// .m-search  .m-search-select{
+//     width:4rem;
+//     background-color: #fff;
+//     color: #00a4af;
+// }
+
+.m-search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #B2B2B2;
+    font-size: 18px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{
+  display:none;
+}

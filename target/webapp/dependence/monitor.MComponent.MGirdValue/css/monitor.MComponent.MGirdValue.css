@@ -1,0 +1,113 @@
+.grid-value {
+  background-color: #fff;
+}
+.grid-value p {
+  margin: 0;
+}
+.grid-value .gv-frame {
+  padding: 6px;
+}
+.grid-value .gv-frame .gv-panel {
+  margin-top: 6px;
+}
+.grid-value .gv-frame .gv-panel:first-child {
+  margin-top: 0px;
+}
+.grid-value .gv-frame .gv-panel .gv-row-title {
+  font-size: 1.16em;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+.grid-value .gv-frame .gv-panel .gv-row {
+  margin: 0;
+  min-height: 30px;
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-row-pic {
+  box-sizing: border-box;
+  padding: 0.2em 0.3em;
+  text-align: center;
+  flex: 1;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-row-pic .gv-row-picBox {
+  padding: 0.8em 0;
+  border-radius: 4px;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-row-pic .gv-row-picBox > img {
+  height: 3.5em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-row-pic .gv-row-picBox > i {
+  position: relative;
+  top: 50%;
+  font-size: 1.8em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-row-pic .gv-row-picBox > p {
+  font-size: 1em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col-title .gv-col-detail {
+  color: #a6a6a6;
+  font-size: 0.8em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col-text-ctn {
+  float: left;
+  padding-left: 1em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col-text-ctn .gv-col-text {
+  font-size: 2.5em;
+  color: #89898a;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col {
+  box-sizing: border-box;
+  padding: 0.1em 0.09em;
+  flex: 1;
+  color: #4d4d4d;
+  margin-left: 6px;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col:first-child {
+  margin-left: 0;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col .gv-col-ctn {
+  position: relative;
+  overflow: hidden;
+  padding: 0.8em 0;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col .gv-col-ctn .gv-col-pic {
+  float: left;
+  overflow: hidden;
+  padding-left: 1em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col .gv-col-ctn .gv-col-pic > i {
+  position: relative;
+  font-size: 38px;
+  line-height: 60px;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-col .gv-col-ctn .gv-col-pic > img {
+  height: 3.5em;
+  padding-top: 0.9em;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-horizontal .gv-col-ctn {
+  display: flex;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-horizontal .gv-col-ctn > .gv-col-title {
+  flex: 1;
+  line-height: 60px;
+  padding-left: 14px;
+  font-size: 14px;
+}
+.grid-value .gv-frame .gv-panel .gv-row .gv-horizontal .gv-col-ctn > .gv-col-text {
+  flex: 1;
+  padding-right: 14px;
+  text-align: right;
+  font-size: 2.5em;
+  color: #89898a;
+  line-height: 60px;
+}

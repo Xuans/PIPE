@@ -1,0 +1,45 @@
+.monitor-message-list .ml-wrap .ml-list {
+  margin: 0;
+}
+.monitor-message-list .ml-wrap .ml-list .ml-list-title {
+  padding: 3px 5px;
+  color: #5d5b67;
+  background-color: #f1f0f5;
+}
+.monitor-message-list .ml-wrap .ml-list .ml-item {
+  padding: 10px 10px 0px 10px;
+}
+.monitor-message-list .ml-wrap .ml-list .ml-item .ml-item-title {
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.monitor-message-list .ml-wrap .ml-list .ml-item .ml-item-text {
+  font-size: 14px;
+}
+.monitor-message-list .ml-wrap .ml-list .ml-item .ml-item-footer {
+  display: flex;
+  padding: 10px 0 ;
+  border-bottom: 1px solid #e9e9ea;
+  font-size: 12px;
+}
+.monitor-message-list .ml-wrap .ml-list .ml-item .ml-item-footer .ml-item-state {
+  flex: 1;
+  text-align: right;
+}
+.monitor-message-list .ml-item-unread {
+  display: inline-block;
+  border-radius: 13px;
+  padding: 1px 13px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ff3341;
+}
+.monitor-message-list .ml-item-readed {
+  display: inline-block;
+  border-radius: 13px;
+  padding: 1px 13px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #22ac38;
+}

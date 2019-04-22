@@ -1,0 +1,44 @@
+.aweb-radio-list {
+
+  .radio-list {
+    overflow: hidden;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    &.disabled {
+      opacity: 0.5;
+    }
+    &:active {
+      background-color: #ececec;
+    }
+
+  }
+
+  .list-radiobox-ctt {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    &.list-radiobox-right {
+
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .list-radiobox-icon {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  .list-radiobox-icon {
+    margin-top: 2px;
+    margin-right: 0.35em;
+    font-size: 23px;
+  }
+
+  .list-radiobox-label {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+}

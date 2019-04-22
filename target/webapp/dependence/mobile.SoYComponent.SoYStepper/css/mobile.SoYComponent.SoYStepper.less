@@ -1,0 +1,82 @@
+
+.aweb4Stepper{
+
+	.stepper-list{
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+	   -webkit-box-align: center;
+	      -ms-flex-align: center;
+	        align-items: center;
+	        padding:5px 10px;
+	        border-bottom:1px solid #eee;
+	        margin:5px 0;
+	}
+	.stepper-title{
+			flex:1;
+	   -moz-flex:1;
+	    -ms-flex:1;
+	-webkit-flex:1;
+	   font-size:16px;
+	   &.no-title{
+	   	display:none;
+	   }
+	   img{
+	   	width:40px;
+	   	height:40px;
+	   }
+	}
+	.stepper-wrapper{
+		 display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+        align-items: center;
+		span{
+			display:flex;
+			justify-content: center;
+			-moz-user-select:none;/*火狐*/
+		    -webkit-user-select:none;/*webkit浏览器*/
+		    -ms-user-select:none;/*IE10*/
+		    -khtml-user-select:none;/*早期浏览器*/
+		    user-select:none;
+			&.stepper-op{
+				width: 30px;
+			    height: 30px;
+			    border: 1px solid #eee;
+			    border-radius: 2px;
+			    font-size: 28px;
+			    // text-align: center;
+			    line-height: 26px;
+			    &.stepper-op-disabled {
+			    	// background-color: rgb(237, 237, 237);
+			    	color: rgb(204, 204, 204);
+			    }
+			}
+
+
+		}
+
+		input.stepper-value {
+			width: 43px;
+			font-size: 16px;
+			line-height: 18px;
+			padding: 7px 0;
+			text-align: center;
+
+			&::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+			   -webkit-appearance: none;
+			   margin: 0;
+			}
+
+			&:disabled {
+				-webkit-opacity: 1;
+				opacity: 1;
+				color: rgb(204, 204, 204) !important;
+				// background-color: #ededed;
+			}
+
+		}
+	}
+}

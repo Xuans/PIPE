@@ -1,0 +1,150 @@
+.aweb4-calendar {
+  overflow: hidden;
+}
+.aweb4-calendar .month {
+  width: 100%;
+  text-align: center;
+  padding: 18px 0;
+}
+.aweb4-calendar .month span {
+  color: #333;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb4-calendar .month span i {
+  font-size: 20px;
+}
+.aweb4-calendar .month span.arrow {
+  margin: 0 10px;
+}
+.aweb4-calendar .weekdays {
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.aweb4-calendar .weekdays span {
+  display: inline-block;
+  width: 14.2%;
+  text-align: center;
+  color: #888;
+}
+.aweb4-calendar .days {
+  padding: 0;
+  background: #fff;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.aweb4-calendar .days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 14.2%;
+  text-align: center;
+  color: #333;
+  margin: 5px 0;
+}
+.aweb4-calendar .days li div {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 4px 0;
+}
+.aweb4-calendar .days li div.other-month {
+  color: #ccc;
+}
+.aweb4-calendar .days li div.checked {
+  border: 2px solid #00a4ae;
+  box-sizing: border-box;
+}
+.aweb4-calendar .days li i {
+  display: inline-block;
+  vertical-align: middle;
+  height: 22px;
+  font-size: 20px;
+}
+.aweb4-calendar .days li span {
+  display: block;
+  height: 22px;
+}
+.aweb4-calendar .calendar-footer {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left {
+  line-height: 50px;
+  padding-left: 20px;
+  float: left;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left > div span {
+  font-size: 18px;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left > div select {
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none no-repeat scroll right center transparent;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left i {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #e6e6e6;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left i.allchecked {
+  color: #00a4ae;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-left img {
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-btn {
+  float: right;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-btn button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 32px;
+  background: #00a4ae;
+  text-align: center;
+  line-height: 48px;
+  font-size: 16px;
+  color: #fff;
+}
+.aweb4-calendar .calendar-footer .calendar-footer-btn button[disabled] {
+  background: #eee;
+}
+.aweb4-calendar .calendar-popup {
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+.aweb4-calendar .calendar-popup.show {
+  display: block;
+}
+.aweb4-calendar .calendar-popup ul {
+  padding-left: 20px;
+}
+.aweb4-calendar .calendar-popup ul li {
+  text-align: left;
+  height: 35px;
+  line-height: 35px;
+}

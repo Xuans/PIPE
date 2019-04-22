@@ -1,0 +1,486 @@
+.aui-link-btn {
+  color: #26a2ff;
+  cursor: pointer;
+}
+.aui-link-btn:hover {
+  color: #006dbf;
+}
+ul.ivu-select-dropdown-list {
+  margin: 0;
+}
+.aweb-base-config .aui-row {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+.aweb-base-config .aui-base-config .ivu-select-single .ivu-select-selection .ivu-select-placeholder {
+  line-height: 2em;
+}
+.aweb-base-config .aui-base-config .isUpdate {
+  font-weight: 800;
+}
+.aweb-base-config .aui-base-config .ivu-input-group-small .ivu-input,
+.aweb-base-config .aui-base-config .ivu-input-group-small > .ivu-input-group-append,
+.aweb-base-config .aui-base-config .ivu-input-group-small > .ivu-input-group-prepend {
+  box-sizing: border-box;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-multiple_select .ivu-tag {
+  position: relative;
+  padding: 0.4em 1.4em 0.4em 0.4em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-multiple_select .ivu-tag .ivu-tag-text {
+  overflow: visible;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-multiple_select .ivu-tag .ivu-icon-ios-close-empty {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding: 0.4em;
+  margin: 0;
+}
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item > .ivu-collapse-header > i {
+  transition: none;
+}
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item.ivu-collapse-item-active > .ivu-collapse-header > i {
+  transform: rotate(0deg);
+}
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item.ivu-collapse-item-active > .ivu-collapse-header > i.aui-jiantou-shang::before {
+  content: '\e793';
+}
+.aweb-base-config .aui-base-config .aui-base-config-component.ivu-collapse {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component.ivu-collapse .ivu-collapse-header {
+  height: 2.2em;
+  line-height: 2.2em;
+  padding: 0 0.4em;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component.ivu-collapse .ivu-collapse:last-child {
+  border-bottom: none;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component.ivu-collapse:first-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component.ivu-collapse .aui-row:last-child {
+  border-bottom: none;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .aui-row {
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .ivu-collapse-content {
+  width: 100%;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .ivu-select-selection {
+  border: none;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .ivu-select-selection .ivu-select-placeholder {
+  padding-left: 12px;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .ivu-select-selection .ivu-select-selected-value {
+  height: 2em;
+  line-height: 2em;
+  padding-left: 0;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .ivu-select-single .ivu-select-selection {
+  height: 2em;
+  line-height: 2em;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component .ivu-select-visible .ivu-select-selection {
+  box-shadow: none;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-object {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  overflow: hidden;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-array {
+  border-top: 1px solid #e5e5e5;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-array .ivu-collapse {
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-array .ivu-collapse .ivu-collapse-item {
+  border-top: 0;
+  margin: 0.5em;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  color: #333;
+  border-radius: 1em;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-array .ivu-collapse .ivu-collapse-item > .ivu-collapse-header {
+  border-top: 0;
+  border-radius: 1em;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-array .ivu-collapse .ivu-collapse-item > .ivu-collapse-header:hover {
+  color: #26a2ff;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-colorPicker .ivu-color-picker {
+  float: right;
+  width: 35%;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-colorPicker .ivu-input-wrapper {
+  float: left;
+  width: inherit;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-colorPicker .ivu-color-picker-input {
+  box-sizing: border-box;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-colorPicker .ivu-input-icon {
+  display: none;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-colorPicker .ivu-color-picker-small .ivu-color-picker-color {
+  width: 30px;
+  top: 6px;
+  bottom: 6px;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-colorPicker .ivu-color-picker-small .ivu-color-picker-color i.ivu-icon-ios-close-empty {
+  display: none;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-number .ivu-input-number {
+  width: 100%;
+  border: none;
+  height: 2em;
+  padding-left: 0;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-directive_div .wangEditor-enter-btn {
+  width: 100%;
+  float: right;
+  padding: 0.8em 1em;
+  background-color: #26a2ff;
+  color: #fff;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-input_append .ivu-input-group-append {
+  background: #ffffff;
+  border: 0;
+  border-left: 1px solid #eee;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-input_number .ivu-input-number {
+  border: none;
+  width: 100%;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-edm .aui-ttl {
+  padding-left: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-edm .aui-ttl > span {
+  font-size: 12px;
+  padding: 0.2em 0.6em;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-edm .aui-edm-config-btn {
+  color: #fff;
+  background-color: #26a2ff;
+  border-color: #26a2ff;
+  padding: 1px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+  right: 2px;
+  top: 2px;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-edm .aui-edm-list-ctn {
+  margin: 0;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-file {
+  line-height: 2;
+}
+.aweb-base-config .aui-base-config .aui-base-config-component-file .col-3 > span {
+  position: relative;
+  float: right;
+}
+.aweb-base-config .aui-base-config .ivu-tabs-no-animation > .ivu-tabs-content {
+  width: calc(100% - 44px);
+}
+.aweb-base-config .aui-base-config .array-del-span,
+.aweb-base-config .aui-base-config .array-add-btn {
+  font-size: 1.1em;
+  float: right;
+  color: #999;
+  padding: 0 0.2em;
+}
+.aweb-base-config .aui-base-config .array-del-span:hover,
+.aweb-base-config .aui-base-config .array-add-btn:hover {
+  color: #26a2ff;
+}
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item > .ivu-collapse-header > .array-del-span,
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item > .ivu-collapse-header > .array-add-btn {
+  transform: none;
+  transition: none;
+}
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item > .ivu-collapse-header > .array-del-span:hover,
+.aweb-base-config .aui-base-config .ivu-collapse > .ivu-collapse-item > .ivu-collapse-header > .array-add-btn:hover {
+  color: #26a2ff;
+}
+.aweb-base-config .aui-base-config .ivu-tabs-left {
+  margin-right: 0;
+}
+.aweb-base-config .aui-base-config .ivu-tabs .ivu-tabs-tabpane {
+  margin-top: 0.2em;
+}
+.aweb-base-config .aui-base-config .ivu-tabs-mini .ivu-tabs-tab {
+  padding: 0.3em 0.8em;
+}
+.aweb-base-config .aui-base-config .ivu-input-wrapper {
+  /*	margin-left:-1.5em;*/
+  width: 100%;
+}
+.aweb-base-config .aui-base-config .ivu-collapse-content {
+  padding: 0;
+}
+.aweb-base-config .aui-base-config .ivu-collapse-content > .ivu-collapse-content-box {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.aweb-base-config .aui-base-config .ivu-tag {
+  height: inherit;
+  line-height: inherit;
+}
+.aweb-base-config .aui-base-config .ivu-select-multiple .ivu-select-input {
+  height: 2em;
+  line-height: 2em;
+}
+.aweb-base-config .aui-base-config .ivu-input {
+  padding: 0;
+  border: none;
+  height: 20px;
+}
+.aweb-base-config .aui-base-config .ivu-input:focus {
+  box-shadow: none;
+}
+.aweb-base-config .aui-base-config .ivu-input-number:focus {
+  box-shadow: none;
+}
+.aweb-base-config .aui-base-config .ivu-input-number:hover {
+  border-color: #fff;
+}
+.aweb-base-config .aui-base-config .ivu-input-number.ivu-input-number-focused {
+  border-color: #fff;
+  box-shadow: none;
+}
+.aweb-base-config .aui-base-config .ivu-input-number .ivu-input-number-handler-wrap .ivu-input-number-handler {
+  height: 1em;
+}
+.aweb-base-config .aui-base-config .ivu-input-number-input-wrap {
+  height: 2em;
+}
+.aweb-base-config .aui-base-config .ivu-input-number-input-wrap .ivu-input-number-input {
+  height: 2em;
+  line-height: 2em;
+  padding: 0;
+}
+.aweb-base-config .aui-base-config textarea.ivu-input {
+  font-size: 1em;
+}
+.aweb-base-config .aui-base-config .ivu-select {
+  font-size: 1em;
+}
+.aweb-base-config .aui-base-config .ivu-btn-small {
+  padding: 1px 5px;
+}
+.aweb-base-config .aui-base-config .ivu-switch {
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 18px;
+}
+.aweb-base-config .aui-base-config .ivu-switch:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  top: 0;
+}
+.aweb-base-config .aui-base-config .ivu-switch-checked:after {
+  left: 22px;
+}
+.aweb-base-config .aui-base-config .ivu-switch-checked .ivu-switch-inner {
+  left: 7px;
+}
+.aweb-base-config .aui-base-config .ivu-select-multiple .ivu-select-selection {
+  padding: 0 1.6em 0 3px;
+  min-height: 20px;
+  box-sizing: border-box;
+}
+.aweb-base-config .aui-base-config .ivu-alert-info {
+  border: 0;
+  background-color: #ffffff;
+}
+.aweb-base-config .aui-base-config .ivu-alert-info > .aui-btn {
+  position: absolute;
+  top: 0.2em;
+  right: 0;
+}
+.aweb-base-config .aui-base-config .config-modal-btn {
+  cursor: pointer;
+  float: right;
+  padding-right: 0.6em;
+}
+.aweb-base-config .aui-base-config .config-modal-btn:hover {
+  color: #26a2ff;
+  /*	background-color: @linkColor;*/
+}
+.aweb-base-config .aui-base-config .edm-config-ctn {
+  padding-top: 0.3em;
+}
+.aweb-base-config .aui-base-config .edm-config-ctn span:first-child {
+  padding-left: 1em;
+  display: inline-block;
+}
+.aweb-base-config .aui-base-config .edm-config-ctn .config-modal-btn {
+  color: #999;
+  padding: 0 0.6em;
+  position: absolute;
+  right: 22px;
+  top: 4px;
+}
+.aweb-base-config .aui-base-config .edm-config-ctn span + .config-modal-btn {
+  float: right;
+  position: static;
+}
+.aweb-base-config .aui-base-config .ivu-collapse .ivu-collapse-item {
+  position: relative;
+}
+.aweb-base-config .aui-base-config .ivu-collapse-content {
+  overflow: inherit;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box .aui-config-tools-title {
+  display: block;
+  cursor: pointer;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box .aui-config-tools-title .tools-title-text > i {
+  padding: 0.2em 0;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box .aui-config-tools-title .tools-title-text > i:hover {
+  color: #006dbf;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul {
+  position: fixed;
+  z-index: 9999;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  transform-origin: center top 0px;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li {
+  height: 20px;
+  line-height: 20px;
+  list-style: none;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li.current,
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li.current:hover {
+  color: #006dbf;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li:hover {
+  color: #006dbf;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li:hover i {
+  color: #006dbf;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box ul > li > i {
+  margin-right: 0.5em;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box .none {
+  display: none;
+}
+.aweb-base-config .aui-base-config .aui-config-tools-box .block {
+  display: block;
+  transform-origin: 50% 0;
+  -webkit-animation: slide-down 0.5s ease-in;
+  transition: max-height 0.2s ease-out;
+}
+.aweb-base-config .aui-css-config {
+  background: #EFEFF3;
+}
+.aweb-base-config .aui-css-config .aui-base-config-component-directive_div.aui-row {
+  background: #EFEFF3;
+  border-bottom: 0;
+}
+.aweb-base-config .aui-css-config .aui-base-config-component-file .col-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.aweb-base-config .ivu-select-dropdown-list {
+  margin: auto;
+}
+.aweb-base-config .ivu-select-dropdown-list .ivu-select-item-selected,
+.aweb-base-config .ivu-select-dropdown-list .ivu-select-item-selected:hover,
+.aweb-base-config .ivu-select-dropdown-list .ivu-select-item:hover {
+  background-color: transparent;
+  color: #006dbf;
+}
+.aweb-base-config .ivu-tooltip-content .ivu-tooltip-inner {
+  white-space: normal;
+}
+.aweb-base-config .ivu-tree-children .ivu-tree-title:hover,
+.aweb-base-config .ivu-tree-children .ivu-tree-title-selected:hover {
+  background-color: transparent;
+  color: #006dbf;
+}
+.aweb-base-config .ivu-collapse-content-box .ivu-collapse {
+  border-bottom: none;
+}
+.aweb-base-config .ivu-end-icons i {
+  cursor: pointer;
+}
+@-webkit-keyframes slide-down {
+  0% {
+    transform: scale(1, 0);
+  }
+  25% {
+    transform: scale(1, 1.2);
+  }
+  50% {
+    transform: scale(1, 0.85);
+  }
+  75% {
+    transform: scale(1, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

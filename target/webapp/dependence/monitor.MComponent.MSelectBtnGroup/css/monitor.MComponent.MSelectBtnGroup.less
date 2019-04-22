@@ -1,0 +1,93 @@
+.m-btn-group{
+    overflow: hidden;
+    div{
+
+        float: left;
+        button{
+            float: left;
+            text-align: center;
+            font-size: 1.3em;
+            padding: 0.3em 0.6em;
+
+        }
+    }
+    >button{
+        cursor: pointer;
+    }
+    .mode1{
+
+
+        button{
+            color: rgba(0, 0, 0, 0.65);
+
+            position: relative;
+        }
+
+
+        button:hover{
+            color: #1890FF;
+            >i{
+                color: #1890FF;
+            }
+        }
+
+
+        button.action{
+            color: #1890FF;
+            >i{
+                color: #1890FF;
+            }
+        }
+
+    }
+    .mode2{
+        background-color: #efefef;
+        border-radius: 20px;
+        border:1px solid #d5d5d5;
+        overflow: hidden;
+        button{
+            font-size: 1.3em;
+            color: #777;
+            border-right: 1px solid #d5d5d5;
+        }
+        :last-of-type{
+            border: 0;
+        }
+        button:hover{
+            background-color: #fff;
+            >i{
+                background-color: #fff;
+            }
+        }
+        button.action{
+            background-color: #fff;
+            >i{
+                background-color: #fff;
+            }
+        }
+    }
+    .mode3{
+        button{
+            font-size: 1.3em;
+            color: #42bff7;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        button:hover{
+            color: #fff;
+            background-color: #42bff7;
+            >i{
+                color: #fff;
+                background-color: #42bff7;
+            }
+        }
+        button.action{
+            color: #fff;
+            background-color: #42bff7;
+            >i{
+                color: #fff;
+                background-color: #42bff7;
+            }
+        }
+    }
+}

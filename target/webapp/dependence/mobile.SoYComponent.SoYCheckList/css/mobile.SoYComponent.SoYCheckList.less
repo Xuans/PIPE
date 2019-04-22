@@ -1,0 +1,50 @@
+.aweb-check-list{
+
+  .check-list,
+  .list-allcheck-ctn{
+  
+    overflow:hidden;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+
+    &:active {
+      background-color: #ececec;
+    }
+    &.disabled{
+      opacity: 0.5;
+    }
+
+  }
+
+  
+  .list-checkbox-ctt {
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+    &.list-checkbox-right {
+      
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .list-checkbox-icon{
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  .list-checkbox-icon{
+    margin-top: 2px;
+    margin-right: 0.35em;
+    font-size: 23px;
+  }
+
+  .list-checkbox-label {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+
+}

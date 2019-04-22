@@ -1,0 +1,4 @@
+( function () {
+    return window.serverUrl || '';
+})
+

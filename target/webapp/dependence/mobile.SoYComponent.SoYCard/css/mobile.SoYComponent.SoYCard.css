@@ -1,0 +1,59 @@
+.aweb4-card .card-list {
+  border: 1px solid #e9eaec;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.aweb4-card p {
+  margin: 0;
+}
+.aweb4-card .card-head {
+  border-bottom: 1px solid #e9eaec;
+  padding: 10px 16px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.aweb4-card .card-head .card-head-text {
+  flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+}
+.aweb4-card .card-head .card-head-text i,
+.aweb4-card .card-head .card-head-text img,
+.aweb4-card .card-head .card-head-text p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb4-card .card-head .card-head-text img {
+  width: 40px;
+  height: 40px;
+}
+.aweb4-card .card-head .card-head-extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ccc;
+}
+.aweb4-card .card-body {
+  padding: 10px 16px;
+  word-break: break-all;
+}
+.aweb4-card .card-footer {
+  position: relative;
+  padding: 10px 16px;
+  color: #ccc;
+}
+.aweb4-card .card-footer .card-footer-extra {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+}

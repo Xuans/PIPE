@@ -1,0 +1,114 @@
+// 循环生成列
+.make-columns-loop( @n, @i: 1) when (@i <= @n){
+
+  &.cell-@{i}{
+    flex: 0 0 @n/@i*10%;
+  }
+  .make-columns-loop( @n, (@i + 1));
+}
+
+
+.flex-layout{
+  &.flex-layout-normal{  // 普通栅格
+
+      display: -webkit-flex;
+      display: flex;
+      >div{
+        flex:1;
+      }
+
+  }
+
+  &.flex-layout-percent{ //百分比布局
+
+      display: -webkit-flex;
+      display: flex;
+      >div{
+        flex:1;
+        .make-columns-loop(10);
+      }
+
+  }
+  &.flex-layout-flow{ // 流式布局
+
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: flex-start;
+      >div{
+        box-sizing: border-box;
+        background-color: white;
+        //flex: 0 0 25%; //可配置项
+        border: 1px solid red;
+      }
+
+  }
+  &.flex-layout-holy-grail{ //圣杯布局
+
+      display: -webkit-flex;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      >div{
+        &:first-child,  //header&footer
+        &:last-child{
+          flex:1;
+        }
+        &:nth-child(2){  //body
+          display: flex;
+          flex: 1;
+          :first-child{ //content
+            flex: 1;
+          }
+          :nth-child(2),  /* 两个边栏的宽度设为12em */
+          :nth-child(3){
+            flex: 0 0 12em; // 可做配置项
+          }
+          :nth-child(2){  /* 导航放到最左边 */
+            order: -1;
+          }
+        }
+      }
+
+  }
+  &.flex-layout-media{//悬挂布局
+
+      display: -webkit-flex;
+      display: flex;
+      align-items: flex-start;
+      :last-child{ //body
+        flex: 1;
+      }
+
+  }
+  &.flex-layout-fixed-foot{ // 固定底栏
+
+      display: -webkit-flex;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      :nth-child(2){
+        flex:1;
+      }
+
+  }
+
+}
+
+@media (max-width: 768px) { //如果是小屏幕，躯干的三栏自动变为垂直叠加
+  .flex-layout{
+    &.flex-layout-holy-grail {
+      :nth-child(2){
+        flex-direction: column;
+        flex: 1;
+        >div{
+          flex: auto;
+        }
+      }
+    }
+  }
+}
+
+
+
+

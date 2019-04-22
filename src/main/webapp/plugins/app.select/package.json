@@ -1,0 +1,225 @@
+{
+  "_from": "@aweb-plugins/app.select@^6.0.2",
+  "_id": "@aweb-plugins/app.select@6.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-CfS5meeuYr+xddUGzl0H9eL5yQU=",
+  "_location": "/@aweb-plugins/app.select",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@aweb-plugins/app.select@^6.0.2",
+    "name": "@aweb-plugins/app.select",
+    "escapedName": "@aweb-plugins%2fapp.select",
+    "scope": "@aweb-plugins",
+    "rawSpec": "^6.0.2",
+    "saveSpec": null,
+    "fetchSpec": "^6.0.2"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://npm.awebide.com/@aweb-plugins/app.select/download/@aweb-plugins/app.select-6.0.2.tgz",
+  "_shasum": "09f4b999e7ae62bfb175d506ce5d07f5e2f9c905",
+  "_spec": "@aweb-plugins/app.select@^6.0.2",
+  "_where": "/Users/lijiancheng/Agree/WebIDE/PIPE/PIPE",
+  "author": "",
+  "bundleDependencies": false,
+  "category": "便携操作",
+  "const": [],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "选择",
+  "docs": {
+    "name": "select",
+    "desp": "选择",
+    "hidden": true,
+    "hasReturn": true,
+    "appJsCode": "app.select",
+    "details": "该方法用于表格单选、多选",
+    "compatibility": "ie8",
+    "belongTo": "function",
+    "params": [
+      {
+        "name": "options",
+        "type": "object",
+        "desp": "JavaScript对象数据",
+        "details": "必需",
+        "necessary": true,
+        "children": [
+          {
+            "name": "context",
+            "desp": "容器，是一个jquery对象或者元素选择器",
+            "type": "string",
+            "defaultValue": "$tableWrapper",
+            "necessary": true
+          },
+          {
+            "name": "button",
+            "desp": "全选按纽，是一个jquery对象或者元素选择器",
+            "type": "string",
+            "defaultValue": "#tableSelAllBtn",
+            "necessary": true
+          },
+          {
+            "name": "container",
+            "desp": "按钮容器，是一个jquery对象或者元素选择器",
+            "type": "string",
+            "defaultValue": "$(tbody,$table)",
+            "necessary": true
+          },
+          {
+            "name": "checkbox",
+            "desp": "按钮选择器类型",
+            "type": "string",
+            "defaultValue": "checkbox",
+            "necessary": true
+          },
+          {
+            "name": "isDataTable",
+            "desp": "是否是表格",
+            "type": "boolean",
+            "defaultValue": false,
+            "necessary": true
+          },
+          {
+            "name": "bCheckState",
+            "desp": "按钮状态",
+            "type": "boolean",
+            "necessary": true
+          },
+          {
+            "name": "isSelectChildren",
+            "desp": "是否选择子元素",
+            "type": "boolean",
+            "defaultValue": false,
+            "necessary": true
+          },
+          {
+            "name": "allDataLength",
+            "desp": "数据长度",
+            "type": "integer",
+            "necessary": true
+          },
+          {
+            "name": "allData",
+            "desp": "数据",
+            "type": "array",
+            "necessary": true,
+            "defaultValue": []
+          },
+          {
+            "name": "operationButtons",
+            "desp": "按钮操作情况",
+            "type": "object",
+            "defaultValue": null,
+            "children": [
+              {
+                "name": "list",
+                "desp": "所有按钮选择器列表",
+                "type": "string",
+                "defaultValue": "#radioBtn,#checkboxBtn"
+              },
+              {
+                "name": "status",
+                "desp": "各种状态",
+                "type": "object",
+                "children": [
+                  {
+                    "name": "Running",
+                    "desp": "激活状态",
+                    "type": "array",
+                    "defaultValue": "[#radioBtn,#checkboxBtn]"
+                  },
+                  {
+                    "name": "Stopped",
+                    "desp": "停止状态",
+                    "type": "array",
+                    "defaultValue": "[#radioBtn,#checkboxBtn]"
+                  },
+                  {
+                    "name": "_default",
+                    "desp": "默认状态",
+                    "type": "array",
+                    "defaultValue": "[#radioBtn,#checkboxBtn]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setNodeMethod",
+            "desp": "设置节点方法",
+            "type": "handler",
+            "defaultValue": "function(){}",
+            "details": "设置节点方法，其中参数有list,elem。list为列表数据，elem为选择的数据对象"
+          },
+          {
+            "name": "getIdMethod",
+            "desp": "获取节点Id的方法",
+            "type": "handler",
+            "defaultValue": "function(){}",
+            "details": "获取节点Id的方法,参数elem为选择的数据对象"
+          },
+          {
+            "name": "getStatusMethod",
+            "desp": "获取各种选择情况下的状态",
+            "type": "handler",
+            "defaultValue": null
+          }
+        ]
+      }
+    ],
+    "returnValue": {
+      "name": "result",
+      "type": "object",
+      "desp": "包含组件方法的对象",
+      "children": [
+        {
+          "name": "nodes",
+          "type": "handler",
+          "desp": "返回节点列表的副本，返回值是一个对象",
+          "defaultValue": "function(){}"
+        },
+        {
+          "name": "list",
+          "type": "handler",
+          "desp": "返回节点ID副本，返回值是一个数组",
+          "defaultValue": "function(){}"
+        },
+        {
+          "name": "clear",
+          "type": "handler",
+          "desp": "清除选中状态",
+          "defaultValue": "function(){}"
+        },
+        {
+          "name": "size",
+          "type": "handler",
+          "desp": "获取选中项总数量，返回数据长度",
+          "defaultValue": "function(){}"
+        },
+        {
+          "name": "dispose",
+          "type": "handler",
+          "desp": "销毁app.select接口",
+          "defaultValue": "function(){}"
+        },
+        {
+          "name": "check",
+          "type": "handler",
+          "desp": "设置选中行，参数为行id组成的数组，如['a','b']",
+          "defaultValue": "function(){}"
+        }
+      ]
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@aweb-plugins/app.select",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.0.2"
+}

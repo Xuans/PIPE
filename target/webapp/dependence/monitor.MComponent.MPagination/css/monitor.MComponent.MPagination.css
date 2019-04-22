@@ -1,0 +1,58 @@
+.paginator,
+.paginator *,
+.paginator:before,
+.paginator:after,
+.paginator *:before,
+.paginator *:after {
+    box-sizing: border-box;
+}
+
+.paginator{
+    position: relative;
+    text-align: center;
+    margin:50px;
+    zoom: 1;
+}
+.paginator:before,.paginator:after{
+    content:"";
+    display:table;
+}
+.paginator:after{
+    clear:both;
+    overflow:hidden;
+}
+.paginator span{
+    display:inline-block;
+    margin:0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+.paginator .active{
+    display:inline-block;
+    margin:0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #01a8b3;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #01a8b3
+}
+.paginator a{
+    display:inline-block;
+    margin:0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+.paginator a:hover{
+    color:#fff;
+    background: #01a8b3
+}

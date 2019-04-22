@@ -1,0 +1,79 @@
+.m-btn-group {
+  overflow: hidden;
+}
+.m-btn-group div {
+  float: left;
+}
+.m-btn-group div button {
+  float: left;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.3em 0.6em;
+}
+.m-btn-group > button {
+  cursor: pointer;
+}
+.m-btn-group .mode1 button {
+  color: rgba(0, 0, 0, 0.65);
+  position: relative;
+}
+.m-btn-group .mode1 button:hover {
+  color: #1890FF;
+}
+.m-btn-group .mode1 button:hover > i {
+  color: #1890FF;
+}
+.m-btn-group .mode1 button.action {
+  color: #1890FF;
+}
+.m-btn-group .mode1 button.action > i {
+  color: #1890FF;
+}
+.m-btn-group .mode2 {
+  background-color: #efefef;
+  border-radius: 20px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+}
+.m-btn-group .mode2 button {
+  font-size: 1.3em;
+  color: #777;
+  border-right: 1px solid #d5d5d5;
+}
+.m-btn-group .mode2 :last-of-type {
+  border: 0;
+}
+.m-btn-group .mode2 button:hover {
+  background-color: #fff;
+}
+.m-btn-group .mode2 button:hover > i {
+  background-color: #fff;
+}
+.m-btn-group .mode2 button.action {
+  background-color: #fff;
+}
+.m-btn-group .mode2 button.action > i {
+  background-color: #fff;
+}
+.m-btn-group .mode3 button {
+  font-size: 1.3em;
+  color: #42bff7;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.m-btn-group .mode3 button:hover {
+  color: #fff;
+  background-color: #42bff7;
+}
+.m-btn-group .mode3 button:hover > i {
+  color: #fff;
+  background-color: #42bff7;
+}
+.m-btn-group .mode3 button.action {
+  color: #fff;
+  background-color: #42bff7;
+}
+.m-btn-group .mode3 button.action > i {
+  color: #fff;
+  background-color: #42bff7;
+}

@@ -1,0 +1,64 @@
+{
+  "_from": "@aweb-plugins/app.queryString@^6.0.1",
+  "_id": "@aweb-plugins/app.queryString@6.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-KSZ2QEQFAvjqQC3D8JxLDYs5WEg=",
+  "_location": "/@aweb-plugins/app.queryString",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@aweb-plugins/app.queryString@^6.0.1",
+    "name": "@aweb-plugins/app.queryString",
+    "escapedName": "@aweb-plugins%2fapp.queryString",
+    "scope": "@aweb-plugins",
+    "rawSpec": "^6.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^6.0.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://npm.awebide.com/@aweb-plugins/app.queryString/download/@aweb-plugins/app.queryString-6.0.1.tgz",
+  "_shasum": "29267640440502f8ea402dc3f09c4b0d8b395848",
+  "_spec": "@aweb-plugins/app.queryString@^6.0.1",
+  "_where": "/Users/lijiancheng/Agree/WebIDE/PIPE/PIPE",
+  "author": "",
+  "bundleDependencies": false,
+  "category": "数据操作",
+  "dependencies": {},
+  "deprecated": false,
+  "description": "获取页面内查询字符串",
+  "docs": {
+    "name": "queryString",
+    "desp": "获取页面内查询字符串",
+    "params": [
+      {
+        "name": "key",
+        "type": "string",
+        "desp": "queryString的键名",
+        "details": "以http://localhost:8080/index.html?timeStamp=12465为例",
+        "defaultValue": "timeStamp",
+        "necessary": true
+      }
+    ],
+    "hasReturn": true,
+    "appJsCode": "app.queryString",
+    "returnValue": {
+      "name": "value",
+      "type": "string",
+      "desp": "queryString对应键名的值",
+      "details": "字符串，返回queryString对应键名的值，若queryString不存在该键名的值，则返回空字符串",
+      "defaultValue": "12465"
+    },
+    "compatibility": "ie8"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@aweb-plugins/app.queryString",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.0.1"
+}

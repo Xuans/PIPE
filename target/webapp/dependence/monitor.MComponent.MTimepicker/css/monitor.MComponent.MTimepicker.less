@@ -1,0 +1,77 @@
+@mainColor:#04bebd;
+.hover(@bColor,@bgColor,@color){
+	border:1px solid @bColor;
+	background:@bgColor;
+	color:@color;
+}
+.ui-widget-content{
+
+    background:#fff;
+    color:#000;
+	.ui-widget-header{
+		background:@mainColor;
+		border:1px solid @mainColor;		
+		
+		.ui-state-hover {
+
+		    .hover(@mainColor,@mainColor,#fff);
+		    .ui-icon{
+		        background-image:url("../images/ui-icons_ffffff_256x240.png");
+		    }
+		}
+	}
+	.ui-datepicker-calendar{
+		
+		//默认
+        .ui-state-default{
+         
+        	border: 1px solid #fff;
+		    background: #fff; 
+		    text-align: center;
+		    width: 28px;
+		    height: 28px;
+		    line-height: 28px;
+		    padding: 0;
+		    &.ui-state-hover{
+		    	/*background:#dcf1ef;
+		    	border:1px solid #dcf1ef;
+		    	color:#fff;*/
+		    	.hover(#dcf1ef,#dcf1ef,#fff);
+		    }
+
+        }
+        //当日
+        .ui-state-highlight{
+
+            .hover(@mainColor,#fff,@mainColor);
+
+		    &.ui-state-hover{
+		       	 .hover(@mainColor,#fff,@mainColor);
+		    }
+        }
+        //选中
+		.ui-state-active{
+
+           .hover(@mainColor,@mainColor,#fff);
+
+		    &.ui-state-hover{
+		        .hover(@mainColor,@mainColor,#fff);
+		    }
+		}
+	}
+	button{
+		&.ui-state-hover{
+			.hover(#b3f2f5,#b3f2f5,#fff);
+		}
+	}
+	.ui-state-focus{
+	    outline:none;
+		.hover(#ccc,#fff,#fff);
+	}
+	.ui-timepicker-div{
+	    .ui-state-hover{
+	    	.hover(#ccc,#fff,#fff);
+	    }
+	}
+	
+}

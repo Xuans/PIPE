@@ -1,0 +1,35 @@
+.aweb-check-list .check-list,
+.aweb-check-list .list-allcheck-ctn {
+  overflow: hidden;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+.aweb-check-list .check-list:active,
+.aweb-check-list .list-allcheck-ctn:active {
+  background-color: #ececec;
+}
+.aweb-check-list .check-list.disabled,
+.aweb-check-list .list-allcheck-ctn.disabled {
+  opacity: 0.5;
+}
+.aweb-check-list .list-checkbox-ctt {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.aweb-check-list .list-checkbox-ctt.list-checkbox-right {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.aweb-check-list .list-checkbox-ctt.list-checkbox-right .list-checkbox-icon {
+  margin-right: 0;
+}
+.aweb-check-list .list-checkbox-icon {
+  margin-top: 2px;
+  margin-right: 0.35em;
+  font-size: 23px;
+}
+.aweb-check-list .list-checkbox-label {
+  font-size: 16px;
+  line-height: 1.6;
+}

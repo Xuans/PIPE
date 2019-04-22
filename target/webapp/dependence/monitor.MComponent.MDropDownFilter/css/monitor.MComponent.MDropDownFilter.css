@@ -1,0 +1,45 @@
+.drop-down-filter {
+  position: relative;
+}
+.drop-down-filter .df-icon {
+  cursor: pointer;
+}
+.drop-down-filter .df-show {
+  color: #2993fa;
+}
+.drop-down-filter .df-wrap {
+  position: absolute;
+  top: 18px;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #888888;
+}
+.drop-down-filter .df-wrap .df-title {
+  padding: 7px 7px;
+  color: #7e849e;
+  background-color: #f4f5fb;
+  font-size: 14px;
+}
+.drop-down-filter .df-wrap .df-funcition {
+  padding: 7px 10px;
+  color: #2993fa;
+  font-weight: bold;
+  font-size: 14px;
+}
+.drop-down-filter .df-wrap .df-funcition .df-funcition-all {
+  cursor: pointer;
+}
+.drop-down-filter .df-wrap .df-ctn {
+  margin: 0;
+  padding-bottom: 5px;
+}
+.drop-down-filter .df-wrap .df-ctn > .df-list {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.drop-down-filter .df-wrap .df-ctn > .df-list > input[type=checkbox] {
+  background-color: #000;
+  border-radius: 3px;
+}

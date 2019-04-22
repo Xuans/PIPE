@@ -1,0 +1,27 @@
+.aweb4-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.aweb4-progress > div {
+  flex: 1;
+  text-align: center;
+}
+.aweb4-progress .progress-content {
+  position: relative;
+  height: 6px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.aweb4-progress .progress-ctn {
+  position: absolute;
+  background-color: #26a2ff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}

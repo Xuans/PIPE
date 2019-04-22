@@ -1,0 +1,545 @@
+.text-overflow-style {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@keyframes showShadow {
+  form {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0 0 5px #05bebd;
+  }
+}
+.product-manager .btn {
+  margin: 0 6px!important;
+  font-size: 12px!important;
+  border: 0;
+}
+.product-manager .btn#addApp {
+  background: #4a5659;
+  color: #eee;
+}
+.product-manager .product-ctn {
+  min-height: 280px;
+  margin: 10px;
+}
+.product-manager .product-ctn .product-content {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+.product-manager .product-ctn .product-content .product-type-bar {
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  line-height: 40px;
+  text-indent: 20px;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .product-menu-ctn {
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 25%;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .product-ctt {
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 73%;
+}
+.product-manager .product-ctn .product-content .product-type-ctt:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .accordion {
+  border-color: transparent;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .accordion-heading {
+  margin-top: 5px;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .accordion-body {
+  width: 100%;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .ser-icon {
+  display: inline-block;
+  position: relative;
+  background-color: #05c697;
+  float: right;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .ser-icon:hover {
+  background-color: #13daa9;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .ser-icon > i {
+  position: absolute;
+  color: #fff;
+  top: 5px;
+  right: 8px;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .accordion-toggle > span {
+  cursor: pointer;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .accordion-toggle:hover,
+.product-manager .product-ctn .product-content .product-type-ctt .nav-list > li > a:hover {
+  font-weight: 600;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .nav-list {
+  padding: 0;
+  text-indent: 1.5em;
+}
+.product-manager .product-ctn .product-content .product-type-ctt .nav-list > li > a {
+  color: #333;
+}
+.product-manager .product-widget {
+  position: relative;
+  float: left;
+  margin: 0px 10px 20px 10px ;
+  width: 122px;
+  min-height: 122px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #f7f7f7;
+  box-sizing: border-box;
+}
+.product-manager .product-widget.product-active {
+  border-color: #04bebd;
+}
+.product-manager .product-widget.product-active .product-icon > i {
+  color: #04bebd;
+}
+.product-manager .product-widget.product-active:hover {
+  border-color: #04bebd;
+}
+.product-manager .product-widget:not(.product-widget-plus):hover {
+  border: 2px solid #04bebd;
+}
+.product-manager .product-widget .product-icon {
+  margin: 23px 0 5px 0;
+  text-align: center;
+  color: #ccc;
+}
+.product-manager .product-widget .product-icon > i {
+  font-size: 33px;
+}
+.product-manager .product-widget .product-widget-name {
+  padding: 0 1em;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-manager .product-widget .product-widget-code > i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.product-manager .product-widget .product-widget-code,
+.product-manager .product-widget .product-widget-assicoted {
+  padding: 0 1em;
+  line-height: 1.5;
+  text-align: center;
+  color: #a6a6a6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-manager .product-widget .product-widget-assicoted {
+  display: none;
+}
+.product-manager .product-widget .product-widget-id {
+  display: none;
+  font-weight: 200;
+  font-size: 0.8em;
+  line-height: 18px;
+  text-align: center;
+}
+.product-manager .product-widget .product-widget-collection {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #ddd;
+  font-size: 18px;
+  cursor: pointer;
+}
+.product-manager .product-widget .product-widget-menu {
+  display: none;
+  position: absolute;
+  right: 7px;
+  top: 0;
+  color: #999;
+  font-size: 17px;
+  cursor: pointer;
+}
+.product-manager .product-widget .product-collected {
+  display: inline-block;
+  color: #ffba00;
+}
+.product-manager .product-widget-plus {
+  text-align: center;
+  background-color: transparent !important;
+  border: 2px dotted #ccc;
+}
+.product-manager .product-widget-plus > .pp-plus-ctt {
+  text-align: center;
+  margin-top: 32px;
+}
+.product-manager .product-widget-plus > .pp-plus-ctt > span {
+  font-size: 52px;
+  color: #e5e5e5;
+}
+.product-manager .product-widget-plus > .pp-plus-ctt > span.pp-plus-text {
+  display: none;
+}
+.product-manager .product-widget-plus:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+.product-manager .product-apps-ctn {
+  margin: 5px;
+  padding: 5px;
+}
+.product-manager .product-apps-ctn:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.product-manager .product-apps-ctn .product-apps-hd {
+  height: 30px;
+  line-height: 30px;
+}
+.product-manager .product-apps-ctn .product-apps-hd .product-hd-title {
+  float: left;
+  font-size: 13px;
+  color: #4d4d4d;
+  text-indent: 12px;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-manager .product-apps-ctn .product-apps-hd .product-hd-collected {
+  margin-right: 20px;
+  float: right;
+  font-size: 12px;
+  color: #a6a6a6;
+}
+.product-manager .product-apps-ctn .product-apps-hd .product-hd-collected i {
+  color: #ddd;
+  font-size: 16px;
+}
+.product-manager .product-apps-ctn .product-apps-hd .product-hd-collected i.product-collected {
+  color: #ffba00;
+}
+.product-manager .product-apps-ctn .product-apps-hd .btn {
+  float: right;
+  width: 100px;
+  height: 28px;
+}
+.product-manager .product-apps-ctn .product-apps-hd:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.product-manager .product-apps-ctn .product-app {
+  position: relative;
+  margin: 10px;
+  height: 138px;
+  width: 210px;
+  float: left;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.product-manager .product-apps-ctn .product-app:hover {
+  box-shadow: 6px -7px 10px -2px #d4d4d4;
+}
+.product-manager .product-apps-ctn .product-app:hover > .product-app-bar {
+  box-shadow: -4px 0px 10px 0px #d4d4d4;
+}
+.product-manager .product-apps-ctn .product-app.product-standard:hover .product-app-bar:before {
+  background-color: #04bebd;
+}
+.product-manager .product-apps-ctn .product-app.product-standard:hover .product-app-ctt {
+  border-color: #04bebd;
+  border-width: 2px;
+}
+.product-manager .product-apps-ctn .product-app.product-standard:hover .product-app-ctt:before {
+  border-color: #04bebd;
+  border-width: 2px;
+  right: -2px;
+}
+.product-manager .product-apps-ctn .product-app.product-unstandard:hover .product-app-bar:before {
+  background-color: #00a0e6;
+}
+.product-manager .product-apps-ctn .product-app.product-unstandard:hover .product-app-ctt {
+  border-color: #00a0e6;
+  border-width: 2px;
+}
+.product-manager .product-apps-ctn .product-app.product-unstandard:hover .product-app-ctt:before {
+  border-color: #00a0e6;
+  border-width: 2px;
+  right: -2px;
+}
+.product-manager .product-apps-ctn .product-app:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.product-manager .product-apps-ctn .product-app.product-standard .product-app-bar {
+  background-color: #04bebd;
+}
+.product-manager .product-apps-ctn .product-app.product-unstandard .product-app-bar {
+  background-color: #00a0e6;
+}
+.product-manager .product-apps-ctn .product-app .product-app-bar {
+  position: relative;
+  margin: 0 5px -5px 5px;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+  line-height: 2em;
+  text-indent: 1em;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #04bebd;
+}
+.product-manager .product-apps-ctn .product-app .product-app-bar:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  width: 32%;
+  height: 10px;
+  border-top-left-radius: 8px;
+  background-color: #ddd;
+}
+.product-manager .product-apps-ctn .product-app .product-app-bar .app-name {
+  font-weight: 500;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt {
+  position: relative;
+  background-color: #fff;
+  padding-top: 1em;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  height: 100px;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: -29px;
+  width: 41%;
+  height: 30px;
+  border-right-style: solid;
+  border-right-color: #ddd;
+  border-right-width: 1px;
+  border-top-color: #ddd;
+  border-top-width: 1px;
+  background-color: #fff;
+  background: #fff;
+  background: linear-gradient(135deg, transparent 20px, #fff 0);
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-title {
+  margin: 0.3em 0 0.8em 0;
+  padding-right: 1em;
+  text-indent: 1.5em;
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-role {
+  text-indent: 1.8em;
+  font-size: 13px;
+  font-weight: 500;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-code {
+  padding-right: 1em;
+  text-indent: 1.5em;
+  color: #a6a6a6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-status {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  height: 20px;
+  width: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-right: none;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-status.product-deployed-app {
+  border-color: #04bebd;
+  color: #04bebd;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-status.product-undeployed-app {
+  border-color: #a6a6a6;
+  color: #a6a6a6;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-desp {
+  display: none;
+  height: 34px;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-opr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 33px;
+  text-align: center;
+  line-height: 2.5em;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  color: #04bebd;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt .product-app-opr .col-2 {
+  display: inline-block;
+  width: 50%;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt:hover {
+  box-shadow: -2px 3px 10px #d4d4d4;
+}
+.product-manager .product-apps-ctn .product-app .product-app-ctt:hover:before {
+  box-shadow: 4px -6px 15px -1px #e5e5e5;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-undeployed .app-status {
+  background-color: #eee;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-undeployed .app-status:after {
+  content: '未部署';
+}
+.product-manager .product-apps-ctn .product-app.pm-status-stop .app-status {
+  background-color: #ffba00;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-stop .app-status:after {
+  content: '停止';
+}
+.product-manager .product-apps-ctn .product-app.pm-status-run .app-status {
+  background-color: #23ad44;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-run .app-status:after {
+  content: '运行';
+}
+.product-manager .product-apps-ctn .product-app.pm-status-suspend .app-status {
+  background-color: #3db9ff;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-suspend .app-status:after {
+  content: '暂停';
+}
+.product-manager .product-apps-ctn .product-app.pm-status-wait-del .app-status {
+  background-color: #7266ba;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-wait-del .app-status:after {
+  content: '待删';
+}
+.product-manager .product-apps-ctn .product-app.pm-status-del .app-status {
+  background-color: #a6a6a6;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-del .app-status:after {
+  content: '已删';
+}
+.product-manager .product-apps-ctn .product-app.pm-status-review .app-status {
+  background-color: #f0f000;
+}
+.product-manager .product-apps-ctn .product-app.pm-status-review .app-status:after {
+  content: '审查';
+}
+.product-manager .operateSystem {
+  width: 100px;
+  height: 20px;
+  position: relative;
+  float: right;
+  z-index: 9999;
+  margin-right: 13px;
+  margin-left: 12px;
+}
+.product-manager .operateSystem button > i {
+  margin-left: 18px;
+}
+.product-manager .operateSystem:hover .opr-menu {
+  display: block;
+}
+.product-manager .operateSystem:hover button > i:before {
+  content: "\f106";
+}
+.product-manager .operateSystem .opr-menu {
+  display: none;
+  position: absolute;
+  top: 27px;
+  right: 5px;
+  min-width: 6.5em;
+  width: 98px;
+  text-align: left;
+  border-radius: 3px;
+  text-indent: 1em;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #4a5659;
+  z-index: 10;
+}
+.product-manager .operateSystem .opr-menu li {
+  padding: 0.4em 0;
+}
+.product-manager .operateSystem .opr-menu li .fa {
+  margin: 0 5px 0 -12px;
+}
+.product-manager .operateSystem .opr-menu li.pp-btn-disabled {
+  color: #ccc;
+}
+.product-manager .operateSystem .opr-menu li:hover {
+  background-color: #05bebd;
+  color: #fff;
+}
+.product-manager .operateSystem .opr-menu li.pp-btn-disabled:hover {
+  color: #eee;
+  background-color: #dedede;
+}
+.product-manager .operateSystem ul,
+.product-manager .operateSystem li {
+  list-style: none;
+}
+.product-manager .product-apps-ctn .product-app.pp-add {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  top: -4px;
+}
+.product-manager .product-apps-ctn .product-app.pp-add:hover {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px #aaa;
+}
+.product-manager .product-apps-ctn .product-app.pp-add .pp-plus-ctt {
+  text-align: center;
+}
+.product-manager .product-apps-ctn .product-app.pp-add .pp-plus-ctt > span.fa {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  line-height: 3;
+  font-size: 20px;
+  color: #e5e5e5;
+  border-radius: 80px;
+  border: 1px solid #e5e5e5;
+}

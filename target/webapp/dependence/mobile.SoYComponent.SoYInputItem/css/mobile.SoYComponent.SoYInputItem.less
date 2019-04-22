@@ -1,0 +1,276 @@
+@color-blue: #26a2ff;
+@color-white: #fff;
+@color-grey: #d9d9d9;
+@border-color: #c8c8cd;
+@success-color: #4caf50;
+@error-color: #f44336;
+@warning-color: #ffc107;
+
+/* list Component */
+@list-value-color: #888;
+
+/* Header Component */
+@header-height: 40px;
+
+/* Button Component */
+@button-default-color: #656b79;
+@button-default-background-color: #f6f8fa;
+@button-default-plain-color: #5a5a5a;
+@button-default-box-shadow: 0 0 1px #b8bbbf;
+@button-primary-color: #fff;
+@button-primary-background-color: #26a2ff;
+@button-danger-color: #fff;
+@button-danger-background-color: #ef4f4f;
+
+/* Tab Item Component */
+@tab-item-font-size: 12px;
+
+/* Tabbar Component */
+@tabbar-background-color: #fafafa;
+@tabbar-tab-item-selected-background-color: #eaeaea;
+@tabbar-tab-item-selected-color: @color-blue;
+
+/* Navbar Component */
+@navbar-background-color: #fafafa;
+@tabbar-tab-item-selected-background-color: #eaeaea;
+
+/* Checklist Component */
+@checklist-title-color: #888;
+
+/* Radio Component */
+@radio-title-color: #888;
+
+/* z-index */
+@z-index-normal: 1;
+
+.aweb4-input-item {
+  .component-list {
+    background-color: @color-white;
+    box-sizing: border-box;
+    color: inherit;
+    min-height: 48px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+
+    & + .component-list {
+
+    }
+    &:first-child {
+      .component-list-wrapper {
+        background-origin: border-box;
+      }
+    }
+
+    .component-list-wrapper {
+
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      box-sizing: border-box;
+
+      font-size: 16px;
+      line-height: 1;
+      min-height: inherit;
+      overflow: hidden;
+      padding: 10px 15px;
+      width: 100%;
+    }
+
+    .component-list-mask {
+      &::after {
+        background-color: #000;
+        content: " ";
+        opacity: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      &:active::after {
+        opacity: .1;
+      }
+    }
+    .component-list-text-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .component-list-text {
+      vertical-align: middle;
+      position: relative;
+      &.is-require::after{
+        color: @error-color;
+        content:'*';
+        margin: 0 0.1em;
+        display: inline-block;
+      }
+    }
+
+    .component-list-label {
+      color: #888;
+      display: block;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .component-list-title {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      i {
+        margin-top: 2px;
+        vertical-align: middle;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .component-list-value {
+      color: @list-value-color;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      &.is-link {
+        margin-right: 24px;
+      }
+    }
+
+    .component-list-left {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    .component-list-right {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+
+    .component-list-link {
+      font-size: 14px;
+    }
+
+    /* inputItem */
+    select {
+      border: none; /*很关键：将默认的select选择框样式清除*/
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none; /*在选择框的最右侧中间显示小箭头图片*/
+      background: none no-repeat scroll right center transparent; /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+      flex: 1;
+      font-size: inherit;
+      line-height: 1.6;
+    }
+    &.component-field {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      &.is-textarea {
+        align-items: inherit;
+        .component-list-title {
+
+        }
+
+        .component-list-value {
+          padding: 5px 0;
+        }
+      }
+      &.is-nolabel {
+        .component-list-title {
+          display: none;
+        }
+      }
+      .component-list-title {
+        width: 105px;
+        flex: none;
+        padding-bottom: 3px;
+      }
+
+      .component-list-value {
+        flex: 1;
+        color: inherit;
+        display: flex;
+      }
+
+      .component-field-core {
+        -webkit-appearance: none;
+        border-radius: 0;
+        border: 0;
+        flex: 1;
+        outline: 0;
+        line-height: 1.6;
+        font-size: inherit;
+        width: 100%;
+        resize: none;
+        background-color: transparent;
+        //&[readonly]{
+        //  color:#ccc;
+        //}
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &:disabled {
+          color: gray !important;
+          background: none;
+          -webkit-opacity: 1;
+          opacity: 1;
+        }
+      }
+      textarea {
+        min-height: 80px;
+        box-sizing: border-box;
+      }
+
+      .component-field-clear {
+        opacity: .2;
+        cursor: pointer;
+
+        > .icon-clear::before {
+          margin-left: 0.2em;
+          margin-right: 0.2em;
+        }
+      }
+      .component-field-state {
+
+        margin-left: 20px;
+        color: @error-color;
+
+      }
+
+    }
+
+    &.errorState {
+      .component-list-text {
+        color: @error-color;
+      }
+      input {
+        color: @error-color;
+      }
+    }
+
+  }
+}
+

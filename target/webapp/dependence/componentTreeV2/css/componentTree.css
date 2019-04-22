@@ -1,0 +1,309 @@
+.aweb-component-tree {
+  position: relative;
+  bottom: 0;
+  top: 0;
+  height: 50%;
+}
+.aweb-component-tree .aui-editor-btn span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.3em 0.5em 0;
+  cursor: pointer;
+}
+.aweb-component-tree .aui-editor-btn span.disabled {
+  color: #a6a6a6;
+}
+.aweb-component-tree .aui-editor-ctn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  margin: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.aweb-component-tree .aui-tree-search-ctn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
+}
+.aweb-component-tree .aui-tree-search-ctn > span {
+  cursor: pointer;
+  padding: 4px 6px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-tree-fold-up {
+  color: #888;
+  font-size: 14px;
+  margin-top: -4px;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-tree-fold-up.fold i::before {
+  content: '\e67e';
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-search-result-ctn {
+  padding: 4px 0 0 10px;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-search-result-ctn em {
+  font-style: normal;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-tree-search-ctt {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  position: relative;
+  width: calc(100% - 60px);
+  height: 22px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-tree-search-ctt .aui-search-left-icon {
+  color: #4d4d4d;
+  margin: 2px 4px;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-tree-search-ctt input {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: 100%;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-tree-search-ctt .aui-search-close {
+  cursor: pointer;
+  color: #ccc;
+  width: 25px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  z-index: 1;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-search-icon-ctn {
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-search-icon-ctn .aui-search-result-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 0;
+  text-align: center;
+  line-height: 1.8em;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-search-icon-ctn .aui-search-result-icon i {
+  color: #888;
+  font-size: 6px;
+  vertical-align: middle;
+}
+.aweb-component-tree .aui-tree-search-ctn .aui-search-icon-ctn .aui-search-result-icon.disabled i {
+  color: #ccc;
+}
+.aweb-component-tree .aui-tree-ctn {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  bottom: 0px;
+  right: 0;
+  overflow: auto;
+  background: #fff;
+  padding-top: 4px;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-ctt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: auto;
+  right: 0;
+  padding-left: 1.4em;
+}
+.aweb-component-tree .aui-tree-ctn em[data-event-role] {
+  font-style: normal;
+  background-color: #ff0;
+  border: 1px solid transparent;
+  color: #000;
+}
+.aweb-component-tree .aui-tree-ctn em[data-event-role].active {
+  border: 1px solid #666;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list {
+  margin-left: 1.5em;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .tree-hide {
+  display: none;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-node {
+  position: relative;
+  min-width: 240px;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-node.aui-widget-droppable > .aui-tree-block {
+  box-shadow: 0 0 8px 0 #aaa;
+  border: 1px dashed #aaa;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-node.aui-widget-droppable > .aui-tree-block .aui-tree-block-title {
+  background-color: #e5f3fe;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-node.aui-widget-unacceptable {
+  background-color: #fafae1;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-node.aui-widget-unacceptable > .aui-tree-block {
+  background-color: #fafae1;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-toggle {
+  position: absolute;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  left: -20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-toggle.fold i::before {
+  content: '\e791';
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block {
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  min-width: 240px;
+  display: inline-block;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block:hover {
+  border: 1px dashed #aaa;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block:hover .aui-tree-block-title {
+  background-color: #e5f3fe;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title {
+  border: 1px solid transparent;
+  position: relative;
+  min-height: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  padding-right: 94px;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title > i {
+  font-size: 14px !important;
+  color: #333;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title > i.aui-ziduan.aui-tree-node-type {
+  color: #dce8f5;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title > i.aui-zidian.aui-tree-node-type {
+  color: #dcf5dc;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title > i.aui-shiti.aui-tree-node-type {
+  color: #f5dcdc;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title > i.aui-fuwu.aui-tree-node-type {
+  color: #f5dcf5;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title .aui-tree-widget-name {
+  font-weight: 600;
+  font-size: 12px;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title .aui-tree-widget-id {
+  color: #b49756;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title .aui-validate-icon {
+  margin-left: 0.6em;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-title .aui-validate-icon i {
+  color: #7aa6cc;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block.active .aui-tree-block-title {
+  background-color: #e5f3fe;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-config-operation-ctn {
+  position: absolute;
+  height: 100%;
+  display: none;
+  right: 0;
+  top: 0;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-config-operation-ctn i {
+  padding: 1px 5px 0;
+  color: #5c6166;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-config-operation-ctn i:hover {
+  color: #2d8cf0;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block:hover .aui-config-operation-ctn {
+  background-color: #e5f3fe;
+  display: block;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block:hover .aui-config-operation-ctn i {
+  display: inline-block;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-left: 14px;
+  box-sizing: border-box;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt > div {
+  color: #777;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt > div > span:first-child {
+  border-radius: 4px;
+  margin-right: 4px;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt .aui-icon-type .aui-event-type {
+  color: #6363a6;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt .aui-icon-type .aui-init-type {
+  color: #63a663;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt .aui-icon-type .aui-interval-type {
+  color: #63a6a6;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt .aui-icon-type .aui-pause-type {
+  color: #a663a6;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt .aui-icon-type .aui-resume-type {
+  color: #a6a663;
+}
+.aweb-component-tree .aui-tree-ctn .aui-tree-list .aui-tree-block .aui-tree-block-ctt .aui-icon-type .aui-unload-type {
+  color: #a66363;
+}
